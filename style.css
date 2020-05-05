@@ -1,0 +1,249 @@
+/* VARIABLES */
+  :root {
+    --arena: #FFF2E5; /* #FFF5EB */
+    --laguna: #181E53;
+    --espuma: #ffffff;
+    --almeja: #E89D59;
+  }
+
+
+
+/* GENERAL */ 
+  html, body {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+  }
+  
+  body {
+    background-color: var(--arena);
+    color: var(--laguna);
+    font-size: 1.2rem;
+    display:flex;
+    flex-flow: wrap;
+    overflow-x: hidden; 
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+    -webkit-overflow-scrolling: touch;
+    margin:0;
+    padding:0;
+  }
+  
+
+
+/* TEXT */
+
+  h1 {
+    font-family: jaf-lapture, sans-serif;
+    font-weight: 400, 700;
+    font-style: normal, italic;
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-family: jaf-lapture, sans-serif;
+    font-weight: 400, 700;
+    font-style: normal, italic;
+    font-size: 2.0rem;
+  }
+ 
+  h3 {
+    font-family: jaf-lapture-caption, sans-serif;
+    font-weight: 400, 700;
+    font-style: normal, italic;
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+
+  p, li {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.1rem;
+    
+  }
+
+
+  
+  /* LINKS */
+  a {
+    background: linear-gradient(to bottom, var(--almeja) 0%, var(--almeja) 100%);
+      background-position: 0 100%;
+      background-repeat: repeat-x;
+      background-size: 3px 3px;
+    color: var(--laguna);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-position: 0 100%;
+    background-size: auto 9px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+    color: var(--laguna);
+  }
+  
+  
+  
+  /* CURSOR */
+  a:hover {
+    cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat970.ani), 
+  url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), auto !important;
+  }
+  
+  
+  
+  /* HIGHLIGHT */
+  ::-moz-selection { 
+      color: var(--arena);
+      background: var(--laguna) }
+  ::selection {color: var(--arena);
+      background: var(--laguna) }
+  
+  
+  
+  /* HEADER BAR */
+  .header-bar {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  
+  .header-bar a:hover {
+    background: linear-gradient(to bottom, var(--almeja) 0%, var(--almeja) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+    text-decoration: none;
+  }
+  
+
+  
+  /* INTRO */
+
+  .intro {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+
+
+  /* CARDS */
+
+  .project {
+    background-color: none;
+  }
+  
+  .project:hover {
+    background-color: var(--laguna);
+    color: var(--arena);
+  }
+
+  .project-inc {
+    background-color: none;
+    opacity: 0.5;
+  }
+  
+  .project-inc:hover {
+    opacity: 0.5;
+  }
+  
+  
+  
+  /* IMAGES */
+  img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  
+  /* BLOCKQUOTES */
+  .wrapper {
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 50px;
+  }
+  
+  blockquote {
+    background: white;
+    padding: 20px 30px 20px 30px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .stacked {
+    border: solid 2px;
+    padding: 20px 30px 20px 30px;
+    box-shadow: 13px 13px 0 0 white,
+                15px 15px 0 0 var(--blue),
+                15px 11px 0 0 var(--blue),
+                11px 15px 0 0 var(--blue);
+  }
+  
+  .shadow-quote {
+    border: solid 2px;
+    box-shadow: 15px 15px 0 0 var(--blue);
+  }
+  
+  .rule {
+    position: relative;
+    left: 7px;
+    background: lighten(var(--blue), 40%);
+    box-shadow: -2px 0 0 var(--blue),
+                -4px 0 0 lighten(var(--blue), 40%),
+                -7px 0 0 var(--blue);
+  }
+  
+  
+  
+  /* ACCORDIONS */
+  /* Accordion button */
+  .accordion {
+    background-color: var(--laguna);
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Accordion hover */
+  .active, .accordion:hover {
+    background-color: #6A6A6A;
+  }
+  
+  /* Accordion panel */
+  .panel {
+    padding: 18px 18px;
+    background-color: #eee;
+    max-height: 0;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-in;
+  }
+  
+  
+  
+  /* Footer */
+  .footer {
+    margin: 50px auto;
+  }        
+  
