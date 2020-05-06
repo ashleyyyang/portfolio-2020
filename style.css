@@ -73,23 +73,19 @@
 
   
   /* LINKS */
+
   a {
-    background: linear-gradient(to bottom, var(--almeja) 0%, var(--almeja) 100%);
-      background-position: 0 100%;
-      background-repeat: repeat-x;
-      background-size: 3px 3px;
+    font-style: italic;
+    text-decoration: underline;
     color: var(--laguna);
-    text-decoration: none;
+    opacity: 0.7;
   }
   
   a:hover {
-    background-position: 0 100%;
-    background-size: auto 9px;
-    background-repeat: repeat-x;
-    text-decoration: none;
     color: var(--laguna);
+    opacity: 1.0;
   }
-  
+
   
   
   /* CURSOR */
@@ -116,13 +112,14 @@
     width: 100%;
   }
   
+  .header-bar a {
+    font-style: normal;
+    text-decoration: none !important;
+  }
   
   .header-bar a:hover {
-    background: linear-gradient(to bottom, var(--almeja) 0%, var(--almeja) 100%);
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 3px 3px;
-    text-decoration: none;
+    font-style: normal;
+    text-decoration: none !important;
   }
   
 
@@ -143,20 +140,44 @@
   .project {
     background-color: none;
   }
+
+  .project a {
+    background-color: none;
+
+    font-style: normal !important;
+    text-decoration: none !important;
+  }
   
   .project:hover {
     background-color: var(--laguna);
     color: var(--arena);
   }
 
+  .project a:hover {
+    background-color: var(--laguna);
+    color: var(--arena);
+
+    font-style: normal !important;
+    text-decoration: none !important;
+  }
+
   .project-inc {
     background-color: none;
-    opacity: 0.5;
+    opacity: 0.7;
+
+    font-style: normal !important;
+    text-decoration: none !important;
   }
   
-  .project-inc:hover {
-    opacity: 0.5;
+  .project-inc a {
+    background-color: none;
+
+    font-style: normal !important;
+    text-decoration: none !important;
   }
+
+
+  
   
   
   
