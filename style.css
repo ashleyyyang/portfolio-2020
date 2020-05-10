@@ -3,7 +3,8 @@
     --arena: #FFF2E5; /* #FFF5EB */
     --laguna: #181E53;
     --espuma: #ffffff;
-    --almeja: #E89D59;
+    --almeja: #E89D59; 
+    --laguna-light: #6B6F98;
   }
 
 
@@ -23,7 +24,8 @@
     font-size: 1.2rem;
     display:flex;
     flex-flow: wrap;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    font-family: 'Karla', sans-serif; 
   }
 
   *, *:before, *:after {
@@ -77,17 +79,45 @@
   a {
     font-style: italic;
     text-decoration: underline;
-    color: var(--laguna);
-    opacity: 0.7;
+    text-decoration-color: var(--laguna-light);
+    color: var(--laguna-light);
   }
   
   a:hover {
     color: var(--laguna);
-    opacity: 1.0;
+    text-decoration-color: var(--laguna);
   }
 
   
+  /* BUTTON */
+
+  .button {
+    background-color: var(--laguna);
+    border: 2px solid var(--arena);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--arena);
+  }
+
+  .button:hover {
+    background-color: var(--arena);
+    border: 2px solid var(--laguna);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--laguna);
+  }
   
+
   /* CURSOR */
   a:hover {
     cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat970.ani), 
@@ -143,7 +173,7 @@
 
   .project a {
     background-color: none;
-
+    opacity: 1.0;
     font-style: normal !important;
     text-decoration: none !important;
   }
@@ -187,6 +217,7 @@
     border: 0;
     width: 100%;
     height: auto;
+    background-color: bisque;
   }
   
   
@@ -210,23 +241,23 @@
     border: solid 2px;
     padding: 20px 30px 20px 30px;
     box-shadow: 13px 13px 0 0 white,
-                15px 15px 0 0 var(--blue),
-                15px 11px 0 0 var(--blue),
-                11px 15px 0 0 var(--blue);
+                15px 15px 0 0 var(--laguna),
+                15px 11px 0 0 var(--laguna),
+                11px 15px 0 0 var(--laguna);
   }
   
   .shadow-quote {
     border: solid 2px;
-    box-shadow: 15px 15px 0 0 var(--blue);
+    box-shadow: 15px 15px 0 0 var(--laguna);
   }
   
   .rule {
     position: relative;
     left: 7px;
-    background: lighten(var(--blue), 40%);
-    box-shadow: -2px 0 0 var(--blue),
-                -4px 0 0 lighten(var(--blue), 40%),
-                -7px 0 0 var(--blue);
+    background: lighten(var(--laguna), 40%);
+    box-shadow: -2px 0 0 var(--laguna),
+                -4px 0 0 lighten(var(--laguna), 40%),
+                -7px 0 0 var(--laguna);
   }
   
   
@@ -235,25 +266,27 @@
   /* Accordion button */
   .accordion {
     background-color: var(--laguna);
-    color: #fff;
+    color: var(--arena);
     cursor: pointer;
-    padding: 18px;
+    padding: 18px 18px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
+    display: inline-block;
   }
+
   
   /* Accordion hover */
   .active, .accordion:hover {
-    background-color: #6A6A6A;
+    background-color: var(--laguna-light);
   }
   
   /* Accordion panel */
   .panel {
     padding: 18px 18px;
-    background-color: #eee;
+    background-color: none;
     max-height: 0;
     display: none;
     overflow: hidden;
@@ -262,9 +295,15 @@
   }
   
   
+ /* Blank */
+ .blank {
+   background-color: none;
+ }
+
+
   
   /* Footer */
   .footer {
-    margin: 50px auto;
+    margin: 20px auto;
   }        
   
