@@ -169,6 +169,7 @@
 
   .project {
     background-color: none;
+
   }
 
   .project a {
@@ -176,6 +177,7 @@
     opacity: 1.0;
     font-style: normal !important;
     text-decoration: none !important;
+    color: var(--laguna);
   }
   
   .project:hover {
@@ -193,7 +195,7 @@
 
   .project-inc {
     background-color: none;
-    opacity: 0.7;
+    opacity: 0.6;
 
     font-style: normal !important;
     text-decoration: none !important;
