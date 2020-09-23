@@ -307,7 +307,9 @@
   url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), */ 
 
   /* CURSOR */
-  a:hover {cursor: url(http://cur.cursors-4u.net/others/oth-7/oth670.cur), pointer, auto !important;}
+  /* a:hover {cursor: url(http://cur.cursors-4u.net/others/oth-7/oth670.cur), pointer, auto !important;} */
+
+a:hover {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat970.ani), url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), auto !important;}
   
   
 
