@@ -68,7 +68,7 @@
 
   p, li {
     font-family: 'Karla', sans-serif;
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     
   }
 
@@ -188,7 +188,7 @@
 
   .project-inc {
     background-color: none;
-    opacity: 0.6;
+    /* opacity: 0.6; */
 
     font-style: normal !important;
     text-decoration: none !important;
@@ -212,7 +212,7 @@
     border: 0;
     width: 100%;
     height: auto;
-    background-color: bisque;
+    /* background-color: bisque; */
   }
   
   
@@ -270,6 +270,7 @@
     outline: none;
     transition: 0.4s;
     display: inline-block;
+    border-radius: 10px;
   }
 
   
