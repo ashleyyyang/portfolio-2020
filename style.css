@@ -228,7 +228,7 @@
     background: white;
     padding: 20px 30px 20px 30px;
     margin: 50px auto;
-    width: 80%;
+    width: 100%; /* 80% */
     max-width: 800px;
   }
   
