@@ -1,6 +1,6 @@
 /* VARIABLES */
   :root {
-    --arena: #f6f9ff; /* #FFF5EB */ /* #FFF2E5 */
+    --arena: #eff4fd; /* #FFF5EB */ /* #FFF2E5 */
     --laguna: #181E53;
     --espuma: #ffffff;
     --almeja: #E89D59; 
@@ -262,7 +262,7 @@
   .accordion {
     background-color: var(--laguna);
     color: var(--arena);
-    cursor: pointer;
+    /* cursor: pointer; */
     padding: 18px 18px;
     width: 100%;
     text-align: left;
@@ -281,7 +281,7 @@
   
   /* Accordion panel */
   .panel {
-    padding: 18px 18px;
+    padding: 18px 0px 0px 0px; 
     background-color: none;
     max-height: 0;
     display: none;
