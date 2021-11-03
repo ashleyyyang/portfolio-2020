@@ -1,317 +1,290 @@
 /* VARIABLES */
-  :root {
-    --arena: #eff4fd; /* #FFF5EB */ /* #FFF2E5 */
-    --laguna: #181E53;
-    --espuma: #ffffff;
-    --almeja: #E89D59; 
-    --laguna-light: #6B6F98;
-  }
+:root {
+  --arena: #eff4fd; /* #FFF5EB */ /* #FFF2E5 */
+  --laguna: #181e53;
+  --espuma: #ffffff;
+  --almeja: #e89d59;
+  --laguna-light: #6b6f98;
+}
 
+/* GENERAL */
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-color: var(--arena);
+  color: var(--laguna);
+  font-size: 1.2rem;
+  display: flex;
+  flex-flow: wrap;
+  overflow-x: hidden;
+  font-family: "Karla", sans-serif;
+}
 
-/* GENERAL */ 
-  html, body {
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    margin:0;
-    padding:0;
-  }
-  
-  body {
-    background-color: var(--arena);
-    color: var(--laguna);
-    font-size: 1.2rem;
-    display:flex;
-    flex-flow: wrap;
-    overflow-x: hidden;
-    font-family: 'Karla', sans-serif; 
-  }
-
-  *, *:before, *:after {
-    box-sizing: inherit;
-    -webkit-overflow-scrolling: touch;
-    margin:0;
-    padding:0;
-  }
-  
-
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+}
 
 /* TEXT */
 
-  h1 {
-    font-family: jaf-lapture, sans-serif;
-    font-weight: 400, 700;
-    font-style: normal, italic;
-    font-size: 2.4rem;
-  }
+h1 {
+  font-family: jaf-lapture, sans-serif;
+  font-weight: 400, 700;
+  font-style: normal, italic;
+  font-size: 2.4rem;
+}
 
-  h2 {
-    font-family: jaf-lapture, sans-serif;
-    font-weight: 400, 700;
-    font-style: normal, italic;
-    font-size: 2.0rem;
-  }
- 
-  h3 {
-    font-family: jaf-lapture-caption, sans-serif;
-    font-weight: 400, 700;
-    font-style: normal, italic;
-    font-size: 1.5rem;
-  }
+h2 {
+  font-family: jaf-lapture, sans-serif;
+  font-weight: 400, 700;
+  font-style: normal, italic;
+  font-size: 2rem;
+}
 
-  h4 {
-    font-family: 'Karla', sans-serif;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-  }
+h3 {
+  font-family: jaf-lapture-caption, sans-serif;
+  font-weight: 400, 700;
+  font-style: normal, italic;
+  font-size: 1.5rem;
+}
 
-  p, li {
-    font-family: 'Karla', sans-serif;
-    /* font-size: 1.1rem; */
-    
-  }
+h4 {
+  font-family: "Karla", sans-serif;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
 
+p,
+li {
+  font-family: "Karla", sans-serif;
+  /* font-size: 1.1rem; */
+}
 
-  
-  /* LINKS */
+/* LINKS */
 
-  a {
-    font-style: italic;
-    text-decoration: underline;
-    text-decoration-color: var(--laguna-light);
-    color: var(--laguna-light);
-  }
-  
-  a:hover {
-    color: var(--laguna);
-    text-decoration-color: var(--laguna);
-  }
+a {
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: var(--laguna-light);
+  color: var(--laguna-light);
+}
 
-  
-  /* BUTTON */
+a:hover {
+  color: var(--laguna);
+  text-decoration-color: var(--laguna);
+}
 
-  .button {
-    background-color: var(--laguna);
-    border: 2px solid var(--arena);
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 10px;
-    font-style: normal;
-    text-decoration: none;
-    color: var(--arena);
-  }
+/* BUTTON */
 
-  .button:hover {
-    background-color: var(--arena);
-    border: 2px solid var(--laguna);
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 10px;
-    font-style: normal;
-    text-decoration: none;
-    color: var(--laguna);
-  }
-  
+.button {
+  background-color: var(--laguna);
+  border: 2px solid var(--arena);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--arena);
+}
 
-  
-  /* HIGHLIGHT */
-  ::-moz-selection { 
-      color: var(--arena);
-      background: var(--laguna) }
-  ::selection {color: var(--arena);
-      background: var(--laguna) }
-  
-  
-  
-  /* HEADER BAR */
-  .header-bar {
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  
-  .header-bar a {
-    font-style: normal;
-    text-decoration: none !important;
-  }
-  
-  .header-bar a:hover {
-    font-style: normal;
-    text-decoration: none !important;
-  }
-  
+.button:hover {
+  background-color: var(--arena);
+  border: 2px solid var(--laguna);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--laguna);
+}
 
-  
-  /* INTRO */
+/* HIGHLIGHT */
+::-moz-selection {
+  color: var(--arena);
+  background: var(--laguna);
+}
+::selection {
+  color: var(--arena);
+  background: var(--laguna);
+}
 
-  .intro {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    display: flex;
-    align-items: center;
-  }
-  
+/* HEADER BAR */
+.header-bar {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 
+.header-bar a {
+  font-style: normal;
+  text-decoration: none !important;
+}
 
-  /* CARDS */
+.header-bar a:hover {
+  font-style: normal;
+  text-decoration: none !important;
+}
 
-  .project {
-    background-color: none;
+/* INTRO */
 
-  }
+.intro {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
 
-  .project a {
-    background-color: none;
-    opacity: 1.0;
-    font-style: normal !important;
-    text-decoration: none !important;
-    color: var(--laguna);
-  }
-  
-  .project:hover {
-    background-color: var(--laguna);
-    color: var(--arena);
-  }
+/* CARDS */
 
-  .project a:hover {
-    background-color: var(--laguna);
-    color: var(--arena);
+.project {
+  background-color: none;
+}
 
-    font-style: normal !important;
-    text-decoration: none !important;
-  }
+.project a {
+  background-color: none;
+  opacity: 1;
+  font-style: normal !important;
+  text-decoration: none !important;
+  color: var(--laguna);
+}
 
-  .project-inc {
-    background-color: none;
-    /* opacity: 0.6; */
+.project:hover {
+  background-color: var(--laguna);
+  color: var(--arena);
+}
 
-    font-style: normal !important;
-    text-decoration: none !important;
-  }
-  
-  .project-inc a {
-    background-color: none;
+.project a:hover {
+  background-color: var(--laguna);
+  color: var(--arena);
 
-    font-style: normal !important;
-    text-decoration: none !important;
-  }
+  font-style: normal !important;
+  text-decoration: none !important;
+}
 
+.project-inc {
+  background-color: none;
+  /* opacity: 0.6; */
 
-  
-  
-  
-  
-  /* IMAGES */
-  img {
-    display: block;
-    border: 0;
-    width: 100%;
-    height: auto;
-    /* background-color: bisque; */
-  }
-  
-  
-  
-  /* BLOCKQUOTES */
-  .wrapper {
-    margin: 0 auto;
-    width: 90%;
-    padding-bottom: 50px;
-  }
-  
-  blockquote {
-    background: white;
-    padding: 20px 30px 20px 30px;
-    margin: 50px auto;
-    width: 100%; /* 80% */
-    max-width: 800px;
-  }
-  
-  .stacked {
-    border: solid 2px;
-    padding: 20px 30px 20px 30px;
-    box-shadow: 13px 13px 0 0 white,
-                15px 15px 0 0 var(--laguna),
-                15px 11px 0 0 var(--laguna),
-                11px 15px 0 0 var(--laguna);
-  }
-  
-  .shadow-quote {
-    border: solid 2px;
-    box-shadow: 15px 15px 0 0 var(--laguna);
-  }
-  
-  .rule {
-    position: relative;
-    left: 7px;
-    background: lighten(var(--laguna), 40%);
-    box-shadow: -2px 0 0 var(--laguna),
-                -4px 0 0 lighten(var(--laguna), 40%),
-                -7px 0 0 var(--laguna);
-  }
-  
-  
-  
-  /* ACCORDIONS */
-  /* Accordion button */
-  .accordion {
-    background-color: var(--laguna);
-    color: var(--arena);
-    /* cursor: pointer; */
-    padding: 18px 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    display: inline-block;
-    border-radius: 10px;
-  }
+  font-style: normal !important;
+  text-decoration: none !important;
+}
 
-  
-  /* Accordion hover */
-  .active, .accordion:hover {
-    background-color: var(--laguna-light);
-  }
-  
-  /* Accordion panel */
-  .panel {
-    padding: 18px 0px 0px 0px; 
-    background-color: none;
-    max-height: 0;
-    display: none;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    transition: max-height 0.2s ease-in;
-  }
-  
-  
- /* Blank */
- .blank {
-   background-color: none;
- }
+.project-inc a {
+  background-color: none;
 
+  font-style: normal !important;
+  text-decoration: none !important;
+}
 
-  
-  /* Footer */
-  .footer {
-    margin: 20px auto;
-  }   
-  
-  
-  /* doggie: url(http://cur.cursors-4u.net/nature/nat-10/nat970.ani), 
-  url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), */ 
+/* IMAGES */
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+  /* background-color: bisque; */
+}
 
-  /* CURSOR */
-  /* a:hover {cursor: url(http://cur.cursors-4u.net/others/oth-7/oth670.cur), pointer, auto !important;} */
+/* BLOCKQUOTES */
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 50px;
+}
 
-a:hover {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat970.ani), url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), auto !important;}
-  
-  
+blockquote {
+  background: white;
+  padding: 20px 30px 20px 30px;
+  margin: 50px auto;
+  width: 100%; /* 80% */
+  max-width: 800px;
+}
 
-  
+.stacked {
+  border: solid 2px;
+  padding: 20px 30px 20px 30px;
+  box-shadow: 13px 13px 0 0 white, 15px 15px 0 0 var(--laguna),
+    15px 11px 0 0 var(--laguna), 11px 15px 0 0 var(--laguna);
+}
+
+.shadow-quote {
+  border: solid 2px;
+  box-shadow: 15px 15px 0 0 var(--laguna);
+}
+
+.rule {
+  position: relative;
+  left: 7px;
+  background: lighten(var(--laguna), 40%);
+  box-shadow: -2px 0 0 var(--laguna), -4px 0 0 lighten(var(--laguna), 40%),
+    -7px 0 0 var(--laguna);
+}
+
+/* ACCORDIONS */
+/* Accordion button */
+.accordion {
+  background-color: var(--laguna);
+  color: var(--arena);
+  /* cursor: pointer; */
+  padding: 18px 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+/* Accordion hover */
+.active,
+.accordion:hover {
+  background-color: var(--laguna-light);
+}
+
+/* Accordion panel */
+.panel {
+  padding: 18px 0px 0px 0px;
+  background-color: none;
+  max-height: 0;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-in;
+}
+
+/* Blank */
+.blank {
+  background-color: none;
+}
+
+/* Footer */
+.footer {
+  margin: 20px auto;
+}
+
+/* doggie: url(http://cur.cursors-4u.net/nature/nat-10/nat970.ani), 
+  url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), */
+
+/* CURSOR */
+/* a:hover {cursor: url(http://cur.cursors-4u.net/others/oth-7/oth670.cur), pointer, auto !important;} */
+
+a:hover {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat970.ani),
+    url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), auto !important;
+}
