@@ -24,7 +24,9 @@ body {
   display: flex;
   flex-flow: wrap;
   overflow-x: hidden;
-  font-family: "Karla", sans-serif;
+  font-family: "Inter", sans-serif;
+
+  /* font-family: "Karla", sans-serif; */
 }
 
 *,
@@ -89,6 +91,55 @@ body {
   font-weight: normal;
   font-style: italic;
 }
+
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-BoldItalic.otf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+h1 {
+  font-family: inferi, sans-serif;
+  font-weight: 150;
+  font-style: normal, italic;
+  font-size: 3.5rem; 
+  /* 2.4rem */
+}
+
+h2 {
+  font-family: inferi, sans-serif;
+  font-weight: bold;
+  font-style: normal, italic;
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-family: inferi, sans-serif;
+  font-weight: normal;
+  font-style: normal, italic;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+p,
+li {
+  font-family: "Inter", sans-serif;
+}
+
+
 
 /* OLD FONTS */
 
