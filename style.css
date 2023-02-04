@@ -38,6 +38,62 @@ body {
 
 /* TEXT */
 
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-Dante.otf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-DanteItalic.otf);
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-Thin.otf);
+  font-weight: 150;
+}
+
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-Thin.otf);
+  font-weight: 150;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-Book.otf);
+  font-weight: 350;
+}
+
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-Book.otf);
+  font-weight: 350;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-Normal.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-NormalItalic.otf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* OLD FONTS */
+
+/*
+
 h1 {
   font-family: jaf-lapture, sans-serif;
   font-weight: 400, 700;
@@ -68,8 +124,12 @@ h4 {
 p,
 li {
   font-family: "Karla", sans-serif;
-  /* font-size: 1.1rem; */
 }
+
+*/
+
+
+
 
 /* LINKS */
 
