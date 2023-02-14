@@ -94,6 +94,20 @@ body {
 
 @font-face {
   font-family: inferi;
+  src: url(inferi/Inferi-Medium.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-MediumItalic.otf);
+  font-weight: 600;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: inferi;
   src: url(inferi/Inferi-Bold.otf);
   font-weight: bold;
 }
@@ -106,6 +120,9 @@ body {
 }
 
 
+
+
+
 h1 {
   font-family: inferi, sans-serif;
   font-weight: 150;
@@ -116,7 +133,7 @@ h1 {
 
 h2 {
   font-family: inferi, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-style: normal, italic;
   font-size: 2.1rem;
 }
