@@ -280,7 +280,10 @@ a:hover {
 /* CARDS */
 
 .project {
-  background-color: none;
+  background-color: var(--laguna) 0.2;
+  
+  /* border: 1px solid var(--laguna);
+  border-top: 0px; */
 }
 
 .project a {
