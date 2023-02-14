@@ -131,6 +131,21 @@ h1 {
   /* 2.4rem */
 }
 
+h1 a {
+  font-style: italic;
+  text-decoration: underline 2px;
+  text-decoration-color: var(--laguna-light);
+  color: var(--laguna-light);
+}
+
+h1 a:hover {
+  font-style: italic;
+  text-decoration: underline 2px;
+  text-decoration-color: var(--laguna-light);
+  color: var(--laguna);
+  text-decoration-color: var(--laguna);
+}
+
 h2 {
   font-family: inferi, sans-serif;
   font-weight: 600;
@@ -280,7 +295,7 @@ a:hover {
 /* CARDS */
 
 .project {
-  background-color: var(--laguna) 0.2;
+  background-color: none;
   
   /* border: 1px solid var(--laguna);
   border-top: 0px; */
