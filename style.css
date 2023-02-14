@@ -68,6 +68,46 @@ body {
 
 @font-face {
   font-family: inferi;
+  src: url(inferi/Inferi-ExtraLight.otf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-ExtraLightItalic.otf);
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-UltraLight.otf);
+  font-weight: 250;
+}
+
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-UltraLightItalic.otf);
+  font-weight: 250;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-Light.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: inferi;
+  src: url(inferi/Inferi-LightItalic.otf);
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: inferi;
   src: url(inferi/Inferi-Book.otf);
   font-weight: 350;
 }
@@ -106,7 +146,7 @@ body {
 }
 
 
-@font-face {
+/* @font-face {
   font-family: inferi;
   src: url(inferi/Inferi-Bold.otf);
   font-weight: bold;
@@ -117,7 +157,7 @@ body {
   src: url(inferi/Inferi-BoldItalic.otf);
   font-weight: bold;
   font-style: italic;
-}
+} */
 
 
 
@@ -141,26 +181,32 @@ h1 a {
 h1 a:hover {
   font-style: italic;
   text-decoration: underline 2px;
-  text-decoration-color: var(--laguna-light);
   color: var(--laguna);
   text-decoration-color: var(--laguna);
 }
 
 h2 {
   font-family: inferi, sans-serif;
-  font-weight: 600;
+  font-weight: 300;
   font-style: normal, italic;
-  font-size: 2.1rem;
+  font-size: 2.3rem; 
 }
 
 h3 {
   font-family: inferi, sans-serif;
-  font-weight: normal;
+  font-weight: 350;
   font-style: normal, italic;
   font-size: 1.5rem;
 }
 
 h4 {
+  font-family: inferi, sans-serif;
+  font-weight: normal;
+  font-style: normal, italic;
+  font-size: 1.3rem;
+}
+
+h5 {
   font-family: "Inter", sans-serif;
   font-size: 1.3rem;
   text-transform: uppercase;
@@ -169,6 +215,7 @@ h4 {
 p,
 li {
   font-family: "Inter", sans-serif;
+  font-weight: 300;
 }
 
 
