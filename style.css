@@ -192,6 +192,14 @@ h2 {
   font-size: 2.3rem; 
 }
 
+.about h2 {
+  font-family: inferi, sans-serif;
+  font-weight: 250;
+  font-style: normal, italic;
+  font-size: 2.3rem; 
+
+}
+
 h3 {
   font-family: inferi, sans-serif;
   font-weight: 350;
