@@ -173,7 +173,7 @@ h1 {
 
 h1 a {
   font-style: italic;
-  text-decoration: underline 2px;
+  /* text-decoration: underline 2px; */
   text-decoration-color: var(--laguna-light);
   color: var(--laguna-light);
 }
@@ -194,10 +194,25 @@ h2 {
 
 .about h2 {
   font-family: inferi, sans-serif;
-  font-weight: 250;
+  font-weight: 300;
   font-style: normal, italic;
   font-size: 2.3rem; 
+}
 
+.about h2 a {
+  font-style: italic;
+  text-decoration: none;
+  color: var(--laguna-light);
+
+}
+
+.about h2 a:hover {
+  /* text-decoration: underline 2px; */
+  font-style: italic;
+  /* color: var(--laguna); */
+  /* text-decoration-color: var(--laguna); */
+  color: var(--arena);
+  background-color: var(--laguna-light);
 }
 
 h3 {
@@ -490,15 +505,26 @@ blockquote {
 
 
 a:hover {
-  cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat970.ani),
-    url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), auto !important;
+  /* emoji: https://www.emojicursor.app/ */
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='44' height='53' viewport='0 0 100 100' style='fill:black;font-size:26px;'><text y='50%'>👀</text></svg>") 16 0,auto; /*!emojicursor.app*/
+
+  /* rainbow lucky charm marshmallow */
+  /* cursor: url(https://cur.cursors-4u.net/food/foo-6/foo515.cur), auto !important; */
+
+  /* sprite */
+  /* cursor: url(https://cur.cursors-4u.net/food/foo-7/foo634.cur), auto !important; */
+
+  /* pee nut butt or */
+  /* cursor: url(https://cur.cursors-4u.net/food/foo-7/foo643.cur), auto !important;  */
+
+  /* ketchup */
+  /* cursor: url(https://cur.cursors-4u.net/food/foo-7/foo637.cur), auto !important; */
+
+  /* doggie */
+  /* cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat970.ani), url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), auto !important; */
 }
 
 
 
 
-/* pee nut butt or
 
-a:hover {
-  cursor: url(https://cur.cursors-4u.net/food/foo-7/foo643.cur), auto !important;
-} */
