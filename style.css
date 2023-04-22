@@ -1,4 +1,146 @@
 /* TEXT */
+@font-face {
+    font-family: inferi;
+    src: url("https://ashyang.com/inferi/inferi-bold.otf") format("opentype"),
+         url("https://ashyang.com/inferi/inferi-bold-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: inferi;
+    src: url("https://ashyang.com/inferi/inferi-bolditalic.otf") format("opentype"),
+         url("https://ashyang.com/inferi/inferi-bolditalic-webfont.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: inferi;
+    src: url("https://ashyang.com/inferi/inferi-book.otf") format("opentype"),
+         url("https://ashyang.com/inferi/inferi-book-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: inferi;
+    src: url("https://ashyang.com/inferi/inferi-bookitalic.otf") format("opentype"),
+         url("https://ashyang.com/inferi/inferi-bookitalic-webfont.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: inferi;
+    src: url("https://ashyang.com/inferi/inferi-dante.otf") format("opentype"),
+         url("https://ashyang.com/inferi/inferi-dante-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: inferi;
+    src: url("https://ashyang.com/inferi/inferi-danteitalic.otf") format("opentype"),
+         url("https://ashyang.com/inferi/inferi-danteitalic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: inferi;
+    src: url("https://ashyang.com/inferi/inferi-normal.otf") format("opentype"),
+         url("https://ashyang.com/inferi/inferi-normal-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: inferi;
+    src: url("https://ashyang.com/inferi/inferi-normalitalic.otf") format("opentype"),
+         url("https://ashyang.com/inferi/inferi-normalitalic-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: inferi;
+    src: url("https://ashyang.com/inferi/inferi-thin.otf") format("opentype"),
+         url("https://ashyang.com/inferi/inferi-thin-webfont.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: inferi;
+    src: url("https://ashyang.com/inferi/inferi-thinitalic.otf") format("opentype"),
+         url("https://ashyang.com/inferi/inferi-thinitalic-webfont.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+
+}
+
+
+
+
+@font-face {
+    font-family: inferi;
+    src: url("https://ashyang.com/inferi/inferi-ultralight.otf") format("opentype"),
+         url("https://ashyang.com/inferi/inferi-ultralight-webfont.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: inferi;
+    src: url("https://ashyang.com/inferi/inferi-ultralightitalic.otf") format("opentype"),
+         url("https://ashyang.com/inferi/inferi-ultralightitalic-webfont.woff") format("woff");
+    font-weight: 200;
+    font-style: italic;
+
+}
+
+/*
 
 @font-face {
   font-family: inferi;
@@ -105,6 +247,7 @@
   font-style: italic;
 }
 
+*/
 
 /* VARIABLES */
 :root {
@@ -168,7 +311,7 @@ body {
 
 h1 {
   font-family: inferi, sans-serif;
-  font-weight: 150;
+  font-weight: 300;
   font-style: normal, italic;
   font-size: 3.5rem;
   /* 2.4rem */
@@ -188,19 +331,19 @@ h1 a:hover {
 
 h2 {
   font-family: inferi, sans-serif;
-  font-weight: 350;
+  font-weight: 400;
   font-style: normal, italic;
   font-size: 2.3rem;
 }
 
 .about h2 {
-  font-weight: 250;
+  font-weight: 200;
   font-style: normal, italic;
   font-size: 2.3rem;
 }
 
 .about h2 a {
-  font-weight: 250;
+  font-weight: 200;
   font-style: italic;
   text-decoration: none;
   color: var(--laguna-light);
@@ -208,7 +351,7 @@ h2 {
 }
 
 .about h2 a:hover {
-  font-weight: 250;
+  font-weight: 200;
   font-style: italic;
   color: var(--arena);
   background-color: var(--laguna-light);
@@ -216,7 +359,7 @@ h2 {
 
 h3 {
   font-family: inferi, sans-serif;
-  font-weight: 350;
+  font-weight: normal;
   font-style: normal, italic;
   font-size: 1.5rem;
 }
