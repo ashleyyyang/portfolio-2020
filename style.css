@@ -343,7 +343,7 @@ h2 {
 }
 
 .about h2 a {
-  font-weight: 200;
+  font-weight: 300;
   font-style: italic;
   text-decoration: none;
   color: var(--laguna-light);
@@ -351,7 +351,7 @@ h2 {
 }
 
 .about h2 a:hover {
-  font-weight: 200;
+  font-weight: 300;
   font-style: italic;
   color: var(--arena);
   background-color: var(--laguna-light);
