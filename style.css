@@ -275,7 +275,7 @@ body {
   display: flex;
   flex-flow: wrap;
   overflow-x: hidden;
-  font-family: "Inter", sans-serif;
+  font-family: Inferi-Book, "Inter", sans-serif;
 
   /* font-family: "Karla", sans-serif; */
 }
