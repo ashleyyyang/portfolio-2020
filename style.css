@@ -2,65 +2,65 @@
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-Dante.otf);
+  src: url("https://ashyang.com/inferi/Inferi-Dante.otf");
   font-weight: 100;
 }
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-DanteItalic.otf);
+  src: url("https://ashyang.com/inferi/Inferi-DanteItalic.otf");
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-Thin.otf);
+  src: url("https://ashyang.com/inferi/Inferi-Thin.otf");
   font-weight: 150;
 }
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-Thin.otf);
+  src: url("https://ashyang.com/inferi/Inferi-Thin.otf");
   font-weight: 150;
   font-style: italic;
 }
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-ExtraLight.otf);
+  src: url("https://ashyang.com/inferi/Inferi-ExtraLight.otf");
   font-weight: 200;
 }
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-ExtraLightItalic.otf);
+  src: url("https://ashyang.com/inferi/Inferi-ExtraLightItalic.otf");
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-UltraLight.otf);
+  src: url("https://ashyang.com/inferi/Inferi-UltraLight.otf");
   font-weight: 250;
 }
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-UltraLightItalic.otf);
+  src: url("https://ashyang.com/inferi/Inferi-UltraLightItalic.otf");
   font-weight: 250;
   font-style: italic;
 }
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-Light.otf);
+  src: url("https://ashyang.com/inferi/Inferi-Light.otf");
   font-weight: 300;
 }
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-LightItalic.otf);
+  src: url("https://ashyang.com/inferi/Inferi-LightItalic.otf");
   font-weight: 300;
   font-style: italic;
 }
@@ -68,39 +68,39 @@
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-Book.otf);
+  src: url("https://ashyang.com/inferi/Inferi-Book.otf");
   font-weight: 350;
 }
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-Book.otf);
+  src: url("https://ashyang.com/inferi/Inferi-Book.otf");
   font-weight: 350;
   font-style: italic;
 }
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-Normal.otf);
+  src: url("https://ashyang.com/inferi/Inferi-Normal.otf");
   font-weight: normal;
 }
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-NormalItalic.otf);
+  src: url("https://ashyang.com/inferi/Inferi-NormalItalic.otf");
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-Medium.otf);
+  src: url("https://ashyang.com/inferi/Inferi-Medium.otf");
   font-weight: 600;
 }
 
 @font-face {
   font-family: inferi;
-  src: url(inferi/Inferi-MediumItalic.otf);
+  src: url("https://ashyang.com/inferi/Inferi-MediumItalic.otf");
   font-weight: 600;
   font-style: italic;
 }
@@ -170,7 +170,7 @@ h1 {
   font-family: inferi, sans-serif;
   font-weight: 150;
   font-style: normal, italic;
-  font-size: 3.5rem; 
+  font-size: 3.5rem;
   /* 2.4rem */
 }
 
@@ -190,13 +190,13 @@ h2 {
   font-family: inferi, sans-serif;
   font-weight: 350;
   font-style: normal, italic;
-  font-size: 2.3rem; 
+  font-size: 2.3rem;
 }
 
 .about h2 {
   font-weight: 250;
   font-style: normal, italic;
-  font-size: 2.3rem; 
+  font-size: 2.3rem;
 }
 
 .about h2 a {
@@ -365,7 +365,7 @@ a:hover {
 
 .project {
   background-color: none;
-  
+
   /* border: 1px solid var(--laguna);
   border-top: 0px; */
 }
@@ -494,7 +494,7 @@ blockquote {
 }
 
 
-/* doggie: url(http://cur.cursors-4u.net/nature/nat-10/nat970.ani), 
+/* doggie: url(http://cur.cursors-4u.net/nature/nat-10/nat970.ani),
   url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), */
 
 /* CURSOR */
@@ -522,8 +522,3 @@ a:hover {
   /* doggie */
   /* cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat970.ani), url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), auto !important; */
 }
-
-
-
-
-
