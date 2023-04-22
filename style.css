@@ -310,7 +310,7 @@ body {
 
 
 h1 {
-  font-family: 'inferi', Inter, sans-serif;
+  font-family: 'Instrument Serif', 'Inter', sans-serif;
   font-weight: 300;
   font-style: normal, italic;
   font-size: 3.5rem;
@@ -330,7 +330,7 @@ h1 a:hover {
 }
 
 h2 {
-  font-family: Inferi-Book, Inter, sans-serif;
+  font-family: 'Instrument Serif', 'Inter', sans-serif;
   font-weight: 300;
   font-style: normal, italic;
   font-size: 2.3rem;
@@ -358,28 +358,28 @@ h2 {
 }
 
 h3 {
-  font-family: 'inferi', sans-serif;
+  font-family: 'Instrument Serif', 'Inter', sans-serif;
   font-weight: normal;
   font-style: normal, italic;
   font-size: 1.5rem;
 }
 
 h4 {
-  font-family: 'inferi', sans-serif;
+  font-family: 'Instrument Serif', 'Inter', sans-serif;
   font-weight: normal;
   font-style: normal, italic;
   font-size: 1.3rem;
 }
 
 h5 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.3rem;
   text-transform: uppercase;
 }
 
 p,
 li {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 300;
 }
 
