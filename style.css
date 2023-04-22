@@ -25,8 +25,8 @@
 
 @font-face {
     font-family: Inferi-Book;
-    src: url("https://ashyang.com/inferi/Inferi-Book.otf") format("opentype"),
-         url("https://ashyang.com/inferi/Inferi-Book.woff") format("woff");
+    src: url("/inferi/Inferi-Book.otf") format("opentype"),
+         url("/inferi/Inferi-Book.woff") format("woff");
     font-weight: 300;
     font-style: normal;
 
@@ -275,7 +275,7 @@ body {
   display: flex;
   flex-flow: wrap;
   overflow-x: hidden;
-  font-family: Inferi-Book, "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 
   /* font-family: "Karla", sans-serif; */
 }
