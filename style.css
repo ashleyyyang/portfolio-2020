@@ -1,6 +1,6 @@
 /* TEXT */
 @font-face {
-    font-family: 'Inferi Bold';
+    font-family: 'Inferi';
     src: url("https://ashyang.com/inferi/inferi-bold.otf") format("opentype"),
          url("https://ashyang.com/inferi/inferi-bold-webfont.woff") format("woff");
     font-weight: bold;
@@ -24,9 +24,9 @@
 
 
 @font-face {
-    font-family: Inferi-Book;
-    src: url("/inferi/Inferi-Book.otf") format("opentype"),
-         url("/inferi/Inferi-Book.woff") format("woff");
+    font-family: 'Inferi';
+    src: url('inferi/Inferi-Book.otf') format('opentype'),
+         url('inferi/Inferi-Book.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 
@@ -330,7 +330,7 @@ h1 a:hover {
 }
 
 h2 {
-  font-family: 'Instrument Serif', 'Inter', sans-serif;
+  font-family: 'Inferi', 'Inter', sans-serif;
   font-weight: 300;
   font-style: normal, italic;
   font-size: 2.3rem;
