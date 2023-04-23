@@ -25,8 +25,8 @@
 
 @font-face {
     font-family: 'Inferi';
-    src: url('inferi/Inferi-Book.otf') format('opentype'),
-         url('inferi/Inferi-Book.woff') format('woff');
+    src: url('https://ashyang.com/Inferi/Inferi-Book.otf') format('opentype'),
+         url('https://ashyang.com/Inferi/Inferi-Book.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 
