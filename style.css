@@ -1,4 +1,5 @@
 /* TEXT */
+
 @font-face {
     font-family: 'Inferi';
     src: url('https://ashyang.com/Inferi/Inferi-Bold.otf') format('opentype'),
@@ -184,18 +185,259 @@ body {
 
 
 
+/* Small devices (landscape phones, 544px and up -> but i changed it to 350px for portrait phones) */
+@media (min-width: 350px) {
+    /*h1 {font-size:1.5rem;}*/ /*1rem = 16px*/
+  h1 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 200;
+    font-style: normal, italic;
+    font-size: 2.7rem;
+    /* 2.4rem */
+  }
+
+  h1 a {
+    font-style: italic;
+    text-decoration: none;
+    color: var(--laguna-light);
+  }
+
+  h1 a:hover {
+    font-style: italic;
+    color: var(--arena);
+    background-color: var(--laguna-light);
+  }
+
+  h2 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 300;
+    font-style: normal, italic;
+    font-size: 1.7rem;
+  }
+
+  .about h2 {
+    font-weight: 200;
+    font-style: normal, italic;
+    font-size: 1.7rem;
+  }
+
+  .about h2 a {
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: none;
+    color: var(--laguna-light);
+
+  }
+
+  .about h2 a:hover {
+    font-weight: 300;
+    font-style: italic;
+    color: var(--arena);
+    background-color: var(--laguna-light);
+  }
+
+  h3 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 300;
+    font-style: normal, italic;
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: normal;
+    font-style: normal, italic;
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.0rem;
+    text-transform: uppercase;
+  }
+
+  p,
+  li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.0rem;
+  }
+}
 
 
 
 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    /*h1 {font-size:2rem;}*/ /*1rem = 16px*/
+
+  h1 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 200;
+    font-style: normal, italic;
+    font-size: 3.0rem;
+    /* 2.4rem */
+  }
+
+  h1 a {
+    font-style: italic;
+    text-decoration: none;
+    color: var(--laguna-light);
+  }
+
+  h1 a:hover {
+    font-style: italic;
+    color: var(--arena);
+    background-color: var(--laguna-light);
+  }
+
+  h2 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 300;
+    font-style: normal, italic;
+    font-size: 1.8rem;
+  }
+
+  .about h2 {
+    font-weight: 200;
+    font-style: normal, italic;
+    font-size: 1.8rem;
+  }
+
+  .about h2 a {
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: none;
+    color: var(--laguna-light);
+
+  }
+
+  .about h2 a:hover {
+    font-weight: 300;
+    font-style: italic;
+    color: var(--arena);
+    background-color: var(--laguna-light);
+  }
+
+  h3 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 300;
+    font-style: normal, italic;
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: normal;
+    font-style: normal, italic;
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  p,
+  li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+  }
+}
 
 
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /*h1 {font-size:2.5rem;}*/ /*1rem = 16px*/
+  h1 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 200;
+    font-style: normal, italic;
+    font-size: 3.5rem;
+    /* 2.4rem */
+  }
+
+  h1 a {
+    font-style: italic;
+    text-decoration: none;
+    color: var(--laguna-light);
+  }
+
+  h1 a:hover {
+    font-style: italic;
+    color: var(--arena);
+    background-color: var(--laguna-light);
+  }
+
+  h2 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 300;
+    font-style: normal, italic;
+    font-size: 2.3rem;
+  }
+
+  .about h2 {
+    font-weight: 200;
+    font-style: normal, italic;
+    font-size: 2.3rem;
+  }
+
+  .about h2 a {
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: none;
+    color: var(--laguna-light);
+
+  }
+
+  .about h2 a:hover {
+    font-weight: 300;
+    font-style: italic;
+    color: var(--arena);
+    background-color: var(--laguna-light);
+  }
+
+  h3 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: 300;
+    font-style: normal, italic;
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-weight: normal;
+    font-style: normal, italic;
+    font-size: 1.3rem;
+  }
+
+  h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+
+  p,
+  li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+  }
+}
+
+
+
+/* h1/h2/etc was originally hereee */
+/*
 h1 {
   font-family: 'Inferi', 'Instrument Serif', sans-serif;
   font-weight: 200;
   font-style: normal, italic;
   font-size: 3.5rem;
-  /* 2.4rem */
 }
 
 h1 a {
@@ -263,46 +505,9 @@ li {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
 }
-
-
-
-/* OLD FONTS */
-
-/*
-
-h1 {
-  font-family: jaf-lapture, sans-serif;
-  font-weight: 400, 700;
-  font-style: normal, italic;
-  font-size: 2.4rem;
-}
-
-h2 {
-  font-family: jaf-lapture, sans-serif;
-  font-weight: 400, 700;
-  font-style: normal, italic;
-  font-size: 2rem;
-}
-
-h3 {
-  font-family: jaf-lapture-caption, sans-serif;
-  font-weight: 400, 700;
-  font-style: normal, italic;
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-family: "Karla", sans-serif;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-}
-
-p,
-li {
-  font-family: "Karla", sans-serif;
-}
-
 */
+
+
 
 
 
@@ -518,13 +723,17 @@ blockquote {
 }
 
 
+
+
+
+
+
+/* CURSOR */
+
 /* doggie: url(http://cur.cursors-4u.net/nature/nat-10/nat970.ani),
   url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), */
 
-/* CURSOR */
 /* a:hover {cursor: url(http://cur.cursors-4u.net/others/oth-7/oth670.cur), pointer, auto !important;} */
-
-
 
 
 a:hover {
