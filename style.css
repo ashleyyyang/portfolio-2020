@@ -145,12 +145,13 @@
 
 /* VARIABLES */
 :root {
-  --arena: #eff4fd; /* #FFF5EB */ /* #FFF2E5 */
+  --arena: #fff; /* #eff4fd */
   --laguna: #181e53;
-  --espuma: #ffffff;
+  --espuma: #F1F2F5; /* #fff */
   --almeja: #e89d59;
   --laguna-light: #6b6f98;
 }
+
 
 /* GENERAL */
 html,
@@ -262,6 +263,12 @@ body {
     font-weight: 300;
     font-size: 1.0rem;
   }
+
+  /* INDEX CARD TEXT PADDING */
+  .card-text {
+      padding: 20px;
+  }
+
 }
 
 
@@ -344,6 +351,11 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 1.1rem;
+  }
+
+  /* INDEX CARD TEXT PADDING */
+  .card-text {
+      padding: 40px 20px;
   }
 }
 
@@ -429,83 +441,6 @@ body {
   }
 }
 
-
-
-/* h1/h2/etc was originally hereee */
-/*
-h1 {
-  font-family: 'Inferi', 'Instrument Serif', sans-serif;
-  font-weight: 200;
-  font-style: normal, italic;
-  font-size: 3.5rem;
-}
-
-h1 a {
-  font-style: italic;
-  text-decoration: none;
-  color: var(--laguna-light);
-}
-
-h1 a:hover {
-  font-style: italic;
-  color: var(--arena);
-  background-color: var(--laguna-light);
-}
-
-h2 {
-  font-family: 'Inferi', 'Instrument Serif', sans-serif;
-  font-weight: 300;
-  font-style: normal, italic;
-  font-size: 2.3rem;
-}
-
-.about h2 {
-  font-weight: 200;
-  font-style: normal, italic;
-  font-size: 2.3rem;
-}
-
-.about h2 a {
-  font-weight: 300;
-  font-style: italic;
-  text-decoration: none;
-  color: var(--laguna-light);
-
-}
-
-.about h2 a:hover {
-  font-weight: 300;
-  font-style: italic;
-  color: var(--arena);
-  background-color: var(--laguna-light);
-}
-
-h3 {
-  font-family: 'Inferi', 'Instrument Serif', sans-serif;
-  font-weight: 300;
-  font-style: normal, italic;
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-family: 'Inferi', 'Instrument Serif', sans-serif;
-  font-weight: normal;
-  font-style: normal, italic;
-  font-size: 1.3rem;
-}
-
-h5 {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-}
-
-p,
-li {
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-}
-*/
 
 
 
@@ -594,6 +529,8 @@ a:hover {
 
 .project {
   background-color: none;
+  margin-bottom: 40px;
+  border-radius: 10px;
 
   /* border: 1px solid var(--laguna);
   border-top: 0px; */
@@ -608,13 +545,13 @@ a:hover {
 }
 
 .project:hover {
-  background-color: var(--laguna);
+  background-color: var(--espuma);
   color: var(--arena);
 }
 
 .project a:hover {
-  background-color: var(--laguna);
-  color: var(--arena);
+  /*background-color: var(--laguna);
+  color: var(--arena);*/
 
   font-style: normal !important;
   text-decoration: none !important;
@@ -635,10 +572,16 @@ a:hover {
   text-decoration: none !important;
 }
 
+.middle {
+    display: flex;
+    align-items: center;
+}
+
 /* IMAGES */
 img {
   display: block;
   border: 0;
+  border-radius: 10px;
   width: 100%;
   height: auto;
   /* background-color: bisque; */
