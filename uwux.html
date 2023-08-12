@@ -52,7 +52,6 @@
 
     <!-- fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/bhy5zlu.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/0ba47b58de.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,19 +65,31 @@
 
 <body>
 
-    <div class="container-fluid header-bar"> <!-- NEW HEADER ????? -->
+    <div class="container-fluid header-bar" id="headerHeight"> <!-- HEADER -->
 
         <div class="row"> <!-- spacer -->
-            <div class="col-lg-2">
-            </div>
+            <div class="col-lg-2"></div>
 
-            <div class="col-lg-8 pt-4"> <!-- main info space-->
-                <div class="intro container blank">
-                    <p><a href="https://ashyang.com/" style="color: var(--laguna);">Design</a> / <a href="about">About</a></p>
+            <div class="col-lg-8 noselect"> <!-- main info space-->
+                <div class="header container">
+                    <div class="header-links">
+                        <p><a href="https://ashyang.com/">Design</a> &nbsp; &nbsp; <a href="about">About</a> &nbsp; &nbsp; <a href="art">Art</a>
+                        </p>
+                    </div>
+
+                    <!-- toggle -->
+                    <div class="toggle-text" id="toggle-mobile">
+                        <label class="toggle-label"><p>🧚</p></label>
+                        <label class="switch container">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> <!-- END NEW HEADER??? -->
+
+    </div> <!-- END HEADER -->
 
 
     <div class="container-fluid">
@@ -87,18 +98,16 @@
             <div class="col-lg-2">
             </div>
 
-            <div class="col-lg-8 py-5">
-                <div class="intro">
+            <div class="col-lg-8">
+                <div class="intro" id="intro">
                     <div class="container">
-                        <h1><strong>UW/UX Brand Refresh</strong></h1>
-                        <p><small>BRANDING</small></p>
+                        <h1>Building the visual identity of UW/UX</h1>
                         <p>How we crafted our identity to highlight an inclusive, friendly, and supportive design community.</p>
                         <p>
                             <strong>Team:</strong> UW/UX team, me<br />
                             <strong>Role:</strong> Branding Lead<br />
                             <strong>Duration:</strong> August 2020 (4 weeks)
                         </p>
-                        <p><i>Thank you to Joe Li for editing!</i></p>
 
                     </div>
                 </div>
@@ -106,12 +115,12 @@
         </div>
 
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-lg-12" style="background-color: black;">
             <img src="img/uwux-header.svg" style="width:100%; height:auto;">
             </div>
 
-        </div>
+        </div> -->
 
 
         <div class="row"> <!-- intro -->
@@ -313,22 +322,21 @@
             <div class="container blank py-4"></div>
 
 
-            <div class="container-fluid header-bar"> <!-- FOOTER -->
+            <div class="container-fluid footer-bar"> <!-- FOOTER -->
                 <div class="row"> <!-- spacer -->
                     <div class="col-lg-2"></div>
-
-                    <div class="col-lg-8 py-4" style="opacity:.6;"> <!-- main info space-->
-                        <div class="container">
-                            <p>Design & code by Ashley Yang.</p>
-                            <p><a href="mailto:ashley.yang@uwaterloo.ca" style="text-decoration: none;">Email</a> /
-                                <a href="https://twitter.com/hotstonefruit" target="_blank" style="text-decoration: none;">Twitter</a> /
-                                <!-- <a href="https://www.are.na/ashley-yang" target="_blank" style="text-decoration: none;">ARE.NA</a> ∙  -->
-                                <a href="https://www.linkedin.com/in/ashleyyyang/" target="_blank" style="text-decoration: none;">LinkedIn</a></p>
-
-
+    
+                    <div class="col-lg-8"> <!-- main info space--> <!--style="opacity:.6;" -->
+                        <div class="container footer">
+                            <div class="footer-links">
+                                <p class="footer-space-text">Code by Ashley Yang.</p>
+    
+                                <p class="footer-space-links">Call me maybe -> <a href="mailto:ashley.yang@uwaterloo.ca" style="text-decoration: none;">Email</a>, <a href="https://twitter.com/inkpools" target="_blank" style="text-decoration: none;">Twitter</a>, <a href="https://www.linkedin.com/in/ashleyyyang/" target="_blank" style="text-decoration: none;">LinkedIn</a>.</p>
+                            </div>
+    
                         </div>
                     </div>
-
+    
                 </div>
             </div> <!-- END FOOTER -->
 

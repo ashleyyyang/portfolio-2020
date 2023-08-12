@@ -20,28 +20,28 @@
     <title>Ashley Yang</title>
     <meta name="keywords" content=""/>
     <!-- EDIT DESCRIPTION -->
-    <!-- <meta name="description" content="Product designer chilling on the little patch of grass between culture, community, and language."/>
+    <!-- <meta name="description" content="Ashley Yang is a product designer who enjoys untangling complex systems, crafting precise language, and using many emojis."/>
     <meta name="author" content="Ashley Yang"/>  -->
 
     <!-- SITE PREVIEW -->
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website"/>
+    <!-- <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://ashyang.com/"/>
     <meta property="og:title" content="Ashley Yang"/>
     <meta property="og:description" content="Product designer chilling on the little patch of grass between design, art, and language."/>
-    <meta property="og:image" content="img/social-preview.png"/>
+    <meta property="og:image" content="img/social-preview.png"/> -->
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
+    <!-- <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://ashyang.com/">
     <meta property="twitter:title" content="Ashley Yang">
     <meta property="twitter:description" content="Product designer chilling on the little patch of grass between design, art, and language.">
-    <meta property="twitter:image" content="img/social-preview.png">
+    <meta property="twitter:image" content="img/social-preview.png"> -->
 
     <!-- css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
 
 
     <!-- favicon -->
@@ -50,15 +50,12 @@
 
 
     <!-- fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/bhy5zlu.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet"> -->
-    <script src="https://kit.fontawesome.com/0ba47b58de.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/bhy5zlu.css"> -->
+    <!-- <script src="https://kit.fontawesome.com/0ba47b58de.js" crossorigin="anonymous"></script> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
 
 
 </head>
@@ -68,19 +65,42 @@
 
 <body>
 
-    <div class="container-fluid header-bar"> <!-- NEW HEADER -->
+    <!-- Draggable DIV -->
+    <div id="dragarea">
+      <p class="dragitem one noselect" id="one">✨</p>
+      <p class="dragitem two noselect" id="two">🥯</p>
+      <p class="dragitem three noselect" id="three">🐈‍⬛</p>
+      <p class="dragitem four noselect" id="four">🍰</p>
+      <p class="dragitem five noselect" id="five">🌞</p>
+    </div>
+
+
+
+    <div class="container-fluid header-bar" id="headerHeight"> <!-- HEADER -->
 
         <div class="row"> <!-- spacer -->
             <div class="col-lg-2"></div>
 
-            <div class="col-lg-8 pt-4"> <!-- main info space-->
-                <div class="intro container blank">
-                    <p><a href="https://ashyang.com/" style="color: var(--laguna);">Design</a> / <a href="about">About</a></p>
+            <div class="col-lg-8 noselect"> <!-- main info space-->
+                <div class="header container">
+                    <div class="header-links">
+                        <p><a href="https://ashyang.com/">Design</a> &nbsp; &nbsp; <a href="about">About</a>
+                        </p>
+                    </div>
+
+                    <!-- toggle -->
+                    <div class="toggle-text" id="toggle-mobile">
+                        <label class="toggle-label"><p>🧚</p></label>
+                        <label class="switch container">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
 
-    </div> <!-- END NEW HEADER -->
+    </div> <!-- END HEADER -->
 
 
 
@@ -90,8 +110,14 @@
             <div class="col-lg-2"></div>
 
             <div class="col-lg-8"> <!-- main info space-->
-                <div class="intro container blank">
-                    <h1>Ashley Yang is a product designer chilling on the little patch of grass between design, art, and language.</h1>
+                <div class="intro" id="intro">
+                    <div class="container"> <!-- animated fadeIn -->
+                        <!-- <h1>Ashley Yang is a product designer chilling on the little patch of grass between design, art, and language.</h1> -->
+                        <!-- <h1>Ashley Yang is a product designer, <i>Super Green Goddess Salad</i> enjoyer, and chronic giggler.</h1> -->
+                        <!-- who gravitates towards -->
+                        <h1>Ashley Yang is a product designer who enjoys untangling complex systems, crafting precise language, and using many&nbsp;emojis.</h1>
+                        <!-- , and building novel&nbsp;tools. -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,95 +138,130 @@
             <!-- !!!!!!NEW CODE START!!!!!! -->
              <div class="container">
 
-                <div class="project"> <!-- DUO CARD -->
-                    <a href="https://duo.com/introducing-continuous-trusted-access" target="_blank" style="background: none">
-                        <div class="row"> <!-- <div class="row py-4 px-4"> -->
-                            <div class="col-sm-5">
-                                <img src="img/duo-index.jpg">
-                            </div>
 
-                            <div class="col-sm-7">
-                                <div class="card-text">
-                                    <p><small>DUO INTERNSHIP, 2022</small></p>
-                                    <h2>Continuous Trusted Access ↗</h2>
-                                    <p>Increasing session security for Admins.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div> <!-- DUO CARD END -->
 
-                <div class="project"> <!-- FIGMA CARD 1 -->
-                    <a href="https://twitter.com/figma/status/1640753741929349135?s=20" target="_blank" style="background: none">
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <img src="img/component-updates-index.jpg">
-                            </div>
-
-                            <div class="col-sm-7">
-                                <div class="card-text">
-                                    <p><small>FIGMA INTERNSHIP, 2021</small></p>
-                                    <h2>Component updates ↗</h2>
-                                    <p>Granular updating experience, improved notifications, and new visual diffs.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div> <!-- FIGMA CARD 1 END -->
 
                 <div class="project" > <!-- FIGMA CARD 2 -->
                     <a href="https://twitter.com/figmadesign/status/1486021702500839428?s=20" target="_blank" style="background: none">
-                        <div class="row">
-                            <div class="col-sm-5">
+                        <div class="row card-center"> <!--card-center -->
+                            <div class="col-sm-4">
                                 <img src="img/figma-search-index-flat.jpg">
                             </div>
 
-                            <div class="col-sm-7">
+                            <div class="col-sm-8">
                                 <div class="card-text">
-                                    <p><small>FIGMA INTERNSHIP, 2021</small></p>
-                                    <h2>Scoped component search ↗</h2>
-                                    <p>Faster asset search in Figma.</p>
+                                    <!-- <h2>Component search&nbsp;↗</h2> -->
+                                    <!-- <p>Faster asset search in Figma.</p> -->
+                                    <p class="tag">Figma, 2021</p>
+                                    <!-- <h2>Component search</h2> -->
+                                    <!-- <h2>Refining component search through scoped queries</h2> -->
+                                    <h2>Refining component search with library context in Figma</h2>
+
+                                    <p>Read case study -></p>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div> <!-- FIGMA CARD 2 END -->
 
-                <div class="project"> <!-- DOZR CARD START -->
+
+
+                <div class="project-inc"> <!-- FIGMA CARD 1 -->
+                    <!-- <a href="https://twitter.com/figma/status/1640753741929349135?s=20" target="_blank" style="background: none"> -->
+                        <div class="row card-center"> <!--card-center -->
+                            <div class="col-sm-4">
+                                <img src="img/component-updates-index.jpg">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <div class="card-text">
+                                    <p class="tag">Figma, 2021</p>
+                                    <!-- <h2>Shaping granular updates for components & styles</h2> with notifications and visual&nbsp;diffs. -->
+                                    <h2>Shaping component and style updates in&nbsp;Figma</h2>
+                                    <p>Coming soon</p>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- </a> -->
+                </div> <!-- FIGMA CARD 1 END -->
+
+
+
+                <div class="project-inc"> <!-- DUO CARD -->
+                    <!-- <a href="https://duo.com/introducing-continuous-trusted-access" target="_blank" style="background: none"> -->
+                        <div class="row card-center"> <!-- <div class="row py-4 px-4"> --> <!--card-center -->
+                            <div class="col-sm-4">
+                                <img src="img/duo-index.jpg">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <div class="card-text">
+                                    <p class="tag">Duo Security, 2022</p>
+                                    <!-- <h2>Continuous Trusted Access</h2> -->
+                                    <h2>Increasing session security control for&nbsp;Admins</h2>
+                                    <!-- <p>Read about experience -></p> -->
+                                    <p>Coming soon</p>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- </a> -->
+                </div> <!-- DUO CARD END -->
+
+                <!-- <div class="project "> 
+                    <a href="uwux.html" target="_blank" style="background: none">
+                        <div class="row card-center"> 
+                            <div class="col-sm-4">
+                                <img src="img/uwuxbranding.svg">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <div class="card-text">
+                                    <p class="tag">UW/UX, 2022</p>
+                                    <h2>Building the visual identity of UW/UX</h2>
+                                    <p>Read case study -></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>  -->
+
+                <!-- <div class="project"> 
                     <a href="dozr" style="background: none">
-                        <div class="row">
-                            <div class="col-sm-5">
+                        <div class="row card-center"> 
+                            <div class="col-sm-4">
                                 <img src="img/dozr-index-flat.jpg">
                             </div>
 
-                            <div class="col-sm-7">
+                            <div class="col-sm-8">
                                 <div class="card-text">
-                                    <p><small>DOZR INTERNSHIP, 2021</small></p>
-                                    <h2>Marketplace listings</h2>
-                                    <p>Helping contractors rent the right equipment for their jobs.</p>
+                                    <p class="tag">DOZR, 2021</p>
+                                    <h2>Helping contractors rent the right equipment for their jobs</h2>
+                                    <p>Read case study -></p>
                                 </div>
                             </div>
                         </div>
                     </a>
-                </div> <!-- DOZR END -->
+                </div> -->
 
-                <div class="project">
+                <!-- <div class="project">
                     <a href="cultura" style="background: none">
-                        <div class="row">
-                            <div class="col-sm-5">
+                        <div class="row card-center"> 
+                            <div class="col-sm-4">
                                 <img src="img/cultura-index-flat.jpg">
                             </div>
 
-                            <div class="col-sm-7">
+                            <div class="col-sm-8">
                                 <div class="card-text">
-                                    <p><small>PERSONAL PROJECT, 2019</small></p>
-                                    <h2>Cultura</h2>
-                                    <p>Encouraging busy students to learn a new language.</p>
+                                    <div>
+                                    <p class="tag">Personal project, 2019</p>
+                                    <h2>Encouraging busy students to learn a new language</h2>
+                                    <p>Read case study -></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-                </div>
+                </div> -->
 
              </div> <!-- container end -->
             <!-- !!!!!!NEW CODE END!!!!!!! -->
@@ -211,21 +272,20 @@
     </div> <!-- container fluid outer -->
 
 
-    <div class="container blank py-4"></div>
+    <!-- <div class="container blank py-4"></div> -->
 
 
-    <div class="container-fluid header-bar"> <!-- FOOTER -->
+    <div class="container-fluid footer-bar"> <!-- FOOTER -->
         <div class="row"> <!-- spacer -->
             <div class="col-lg-2"></div>
 
-            <div class="col-lg-8 py-4" style="opacity:.6;"> <!-- main info space-->
-                <div class="container">
-                    <p>Design & code by Ashley Yang.</p>
-                    <p><a href="mailto:ashley.yang@uwaterloo.ca" style="text-decoration: none;">Email</a> /
-                        <a href="https://twitter.com/hotstonefruit" target="_blank" style="text-decoration: none;">Twitter</a> /
-                        <!-- <a href="https://www.are.na/ashley-yang" target="_blank" style="text-decoration: none;">ARE.NA</a> ∙  -->
-                        <a href="https://www.linkedin.com/in/ashleyyyang/" target="_blank" style="text-decoration: none;">LinkedIn</a></p>
-
+            <div class="col-lg-8"> <!-- main info space--> <!--style="opacity:.6;" -->
+                <div class="container footer">
+                    <div class="footer-links">
+                        <p class="footer-space-text">Code by Ashley Yang.</p>
+                        <!-- Call me maybe ->  -->
+                        <p class="footer-space-links">Send a msg -> <a href="mailto:ashley.yang@uwaterloo.ca" style="text-decoration: none;">Email</a>, <a href="https://twitter.com/inkpools" target="_blank" style="text-decoration: none;">Twitter</a>, <a href="https://www.linkedin.com/in/ashleyyyang/" target="_blank" style="text-decoration: none;">LinkedIn</a>.</p>
+                    </div>
 
                 </div>
             </div>

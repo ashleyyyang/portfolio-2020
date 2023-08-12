@@ -20,28 +20,28 @@
     <title>About</title>
     <meta name="keywords" content=""/>
     <!-- EDIT DESCRIPTION -->
-    <!-- <meta name="description" content="I'm Ashley, a product designer and engineering student.">  -->
-    <meta name="author" content="Ashley Yang"/>
+    <!-- <meta name="description" content="Ashley Yang is a product designer who enjoys untangling complex systems, crafting precise language, and using many emojis."> 
+    <meta name="author" content="Ashley Yang"/> -->
 
     <!-- SITE PREVIEW -->
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
+    <!-- <meta property="og:type" content="website">
     <meta property="og:url" content="https://ashyang.com/about">
     <meta property="og:title" content="About">
-    <!-- <meta property="og:description" content="I'm Ashley, a product designer and engineering student."> -->
-    <meta property="og:image" content="img/social-preview.png">
+    <meta property="og:description" content="I'm Ashley, a product designer and engineering student.">
+    <meta property="og:image" content="img/social-preview.png"> -->
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
+    <!-- <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://ashyang.com/about">
     <meta property="twitter:title" content="About">
-    <!-- <meta property="twitter:description" content="I'm Ashley, a product designer and engineering student."> -->
-    <meta property="twitter:image" content="img/social-preview.png">
+    <meta property="twitter:description" content="I'm Ashley, a product designer and engineering student.">
+    <meta property="twitter:image" content="img/social-preview.png"> -->
 
     <!-- css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
 
 
     <!-- favicon -->
@@ -50,9 +50,8 @@
 
 
     <!-- fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/bhy5zlu.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet"> -->
-    <script src="https://kit.fontawesome.com/0ba47b58de.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/bhy5zlu.css">
+    <script src="https://kit.fontawesome.com/0ba47b58de.js" crossorigin="anonymous"></script> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,19 +64,46 @@
 
 
 <body>
+    <!-- Draggable DIV -->
+    <div id="dragarea">
+      <p class="dragitem one noselect" id="one">✨</p>
+      <p class="dragitem two noselect" id="two">🌞</p>
+      <p class="dragitem three noselect" id="three">☁️</p>
+      <p class="dragitem four noselect" id="four">🍰</p>
+      <p class="dragitem five noselect" id="five">🍰</p>
+    </div>
 
-    <div class="container-fluid header-bar"> <!-- NEW HEADER ????? -->
+
+    <div class="container-fluid header-bar" id="headerHeight"> <!-- HEADER -->
 
         <div class="row"> <!-- spacer -->
             <div class="col-lg-2"></div>
 
-            <div class="col-lg-8 pt-4"> <!-- main info space-->
-                <div class="intro container blank">
-                    <p><a href="https://ashyang.com/">Design</a> / <a href="about"  style="color: var(--laguna);">About</a></p>
+            <div class="col-lg-8 noselect"> <!-- main info space-->
+                <div class="header container">
+                    <div class="header-links">
+                        <p><a href="https://ashyang.com/">Design</a> &nbsp; &nbsp; <a href="about">About</a>
+                        </p>
+                    </div>
+
+                    <!-- toggle -->
+                    <div class="toggle-text" id="toggle-mobile">
+                        <label class="toggle-label"><p>🧚</p></label>
+                        <label class="switch container">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> <!-- END NEW HEADER??? -->
+
+    </div> <!-- END HEADER -->
+
+
+
+
+
 
 
     <div class="container-fluid">
@@ -86,39 +112,67 @@
             <div class="col-lg-2"></div>
 
             <div class="col-lg-8"> <!-- main info space-->
-                <div class="intro">
-                    <div class="container animated fadeIn">
+                <div class="intro" id="intro">
+                    <div class="container">
 
-                        <!-- <img src="img/about-img.png" style="width: 50%; max-width: 400px; min-width: 200px; background-color: var(--arena);">  -->
-                        <!-- img/about_me.jpg -->
 
-                        <div class="blank pt-4 about">
-                            <h2>I’m Ashley, a senior studying Systems Design Engineering at the University of Waterloo. I’m currently on a gap year and looking for new-grad product designer roles starting Summer/Fall 2024.</h2>
+                        <!-- <img src="img/about-new.jpeg" style="width: 18rem; max-width:100%; margin-bottom:0.5rem;"> -->
+
+                            
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img src="img/about-new8.jpg" style="width: 100%; margin-bottom:0.5rem;">
+                            </div>  
+
+                            <div class="col-sm-8 pt-4 about" style="display: inline-block; align-self: flex-end;">
+                                <h2>I’m Ashley, most recently a product design intern at <a href="https://duo.com/" target="_blank">Duo Security</a> and <a href="https://www.figma.com/about/" target="_blank">Figma</a>,
+                                    seeking new-grad product design roles for Fall&nbsp;2024.</h2>
+                            </div>  
                         </div>
 
-                        <div class="blank pt-4 about">
+                        <!-- <div class="row">
+                            <div class="col-sm-3">
+                            <img src="img/about-new.jpeg" style="width: 19.75rem; max-width:100%; margin-bottom:0.5rem;">
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="pt-4 about">
+                            <h2>I’m Ashley, a senior studying Systems Design Engineering at the University of Waterloo. I’m looking for new-grad product design roles for Summer&nbsp;2024.</h2>
+                        </div> -->
+
+                        <div class="pt-4 about">
+                            <h2>
+                                I am studying Systems Design Engineering at the University of Waterloo. 
+                                Outside of class, I’ve co-led <a href="https://www.instagram.com/uw_ux/" target="_blank">UW/UX</a>, the university’s design club.
+                                I also designed tools to improve communication and hardware procurement for 3,000+ attendees at <a href="https://hackthenorth.com/" target="_blank">Hack&nbsp;the&nbsp;North</a>, Canada’s biggest&nbsp;hackathon.
+                                
+                                <!-- My studies influenced my analytical and systems-based approach to design, while my interests shaped my focus on language. -->
+                            <!-- I’m especially drawn to projects that involve untangling complex systems, crafting precise language, and building novel tools.</h2> -->
+                            <!-- Design work that interests me the most is complex and original —  and remixing ideas from disparate fields to create something new!-->
                             <!-- I’m interested in exploring the connection between design, language, and culture. -->
-                            <h2>
-                                Outside of class, I’ve co-led <a href="https://www.instagram.com/uw_ux/" target="_blank">UW/UX</a>, where we support the design community through workshops, mentorship, and gatherings.
-                                I also designed tools to improve discovery, communication, and hardware procurement for 3,000+ hackers and sponsors at <a href="https://hackthenorth.com/" target="_blank">Hack the North</a>.
-                             </h2>
-                        </div>
-
-                        <div class="blank pt-4 about">
-                            <h2>
-                                I was most recently a product design intern at <a href="https://duo.com/" target="_blank">Duo Security</a> and <a href="https://www.figma.com/about/" target="_blank">Figma</a>.
-                            I’m especially drawn to complex projects that involve systems thinking and precise language usage.</h2>
-                            <!-- Design work that interests me the most is complex and original —  -->
-                        </div>
-
-                        <div class="blank pt-4 about">
-                            <h2>In my free time, you can find me reading a <a href="https://oku.club/user/ashyang" target="_blank" style="text-decoration: none;">book</a>, playing with <a href="https://twitter.com/coldstonefruit" target="_blank" style="text-decoration: none;">oil pastels</a>, and
-                                studying languages.</h2>
+                            <!-- where we support the design community through workshops, mentorship, and gatherings. -->
+                            <!-- I also designed tools to improve discovery, communication,  -->
                         </div>
 
 
-                        <div class="blank pt-4 about">
-                            <h2>My <a href="img/AshleyYang_Resume.pdf" target="_blank">resumé</a> contains more details about my work. If you’re looking for additional information, the best way to contact me is through <a href="mailto:ashley.yang@uwaterloo.ca">email</a>.
+
+                        <div class="pt-4 about">
+                            <h2>You can usually find me reading <a href="https://oku.club/user/ashyang" target="_blank" style="text-decoration: none;">fiction</a>, 
+                                learning languages, and 
+                                <!-- maintaining my Russian Duolingo streak, and  -->
+                                layering <a href="art" target="_blank">pastels</a>.
+                                <!-- scribbling in one of my mini&nbsp;notebooks. -->
+
+                            </h2>
+
+                            <!--playing with <a href="https://twitter.com/coldstonefruit" target="_blank" style="text-decoration: none;">oil pastels</a> -->
+                        </div>
+
+
+                        <div class="pt-4 about">
+                            <h2>My <a href="img/AshleyYang_Resume.pdf" target="_blank">resumé</a> contains additional information about my work.
+                                Contact me through&nbsp;<a href="mailto:ashley.yang@uwaterloo.ca">email</a> for more details!
                                 </h2>
                         </div>
 
@@ -135,27 +189,25 @@
     </div> <!-- container fluid outer -->
 
 
-    <div class="container blank py-4"></div>
+    <!-- <div class="container blank py-4"></div> -->
+    <div class="container-fluid footer-bar"> <!-- FOOTER -->
+        <div class="row"> <!-- spacer -->
+            <div class="col-lg-2"></div>
 
-        <div class="container-fluid header-bar"> <!-- FOOTER -->
-            <div class="row"> <!-- spacer -->
-                <div class="col-lg-2"></div>
-
-                <div class="col-lg-8 py-4" style="opacity:.6;"> <!-- main info space-->
-                    <div class="container">
-                        <p>Design & code by Ashley Yang.</p>
-                        <p><a href="mailto:ashley.yang@uwaterloo.ca" style="text-decoration: none;">Email</a> /
-                            <a href="https://twitter.com/hotstonefruit" target="_blank" style="text-decoration: none;">Twitter</a> /
-                            <!-- <a href="https://www.are.na/ashley-yang" target="_blank" style="text-decoration: none;">ARE.NA</a> ∙  -->
-                            <a href="https://www.linkedin.com/in/ashleyyyang/" target="_blank" style="text-decoration: none;">LinkedIn</a></p>
-
-
+            <div class="col-lg-8"> <!-- main info space--> <!--style="opacity:.6;" -->
+                <div class="container footer">
+                    <div class="footer-links">
+                        <p class="footer-space-text">Code by Ashley Yang.</p>
+                        <!-- Call me maybe ->  -->
+                        <p class="footer-space-links">Send a msg -> <a href="mailto:ashley.yang@uwaterloo.ca" style="text-decoration: none;">Email</a>, <a href="https://twitter.com/inkpools" target="_blank" style="text-decoration: none;">Twitter</a>, <a href="https://www.linkedin.com/in/ashleyyyang/" target="_blank" style="text-decoration: none;">LinkedIn</a>.</p>
                     </div>
+
                 </div>
-
-
             </div>
-        </div> <!-- END FOOTER -->
+
+        </div>
+    </div> <!-- END FOOTER -->
+
 
 
 

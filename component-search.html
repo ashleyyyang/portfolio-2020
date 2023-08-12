@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+
+<head>
+
+<!-- Global site tag (gtag.js) -->
+    <!-- Global site tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136768197-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-136768197-2');
+    </script>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Refining component search with library context in Figma</title>
+    <meta name="keywords" content="">
+    <!-- EDIT DESCRIPTION -->
+    <!-- <meta name="description" content="Faster asset search in Figma.">
+    <meta name="author" content="Ashley Yang"> -->
+
+    <!-- SITE PREVIEW -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ashyang.com/dozr">
+    <meta property="og:title" content="DOZR Marketplace Listings">
+    <meta property="og:description" content="Helping contractors select the right equipment for their needs.">
+    <meta property="og:image" content="img/dozr-social-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ashyang.com/dozr">
+    <meta property="twitter:title" content="DOZR Marketplace Listings">
+    <meta property="twitter:description" content="Helping contractors select the right equipment for their needs.">
+    <meta property="twitter:image" content="img/dozr-social-preview.jpg">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+
+    <!-- fonts -->
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/bhy5zlu.css"> -->
+    <!-- <script src="https://kit.fontawesome.com/0ba47b58de.js" crossorigin="anonymous"></script> -->
+
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet"> -->
+
+
+
+</head>
+
+
+
+
+<body>
+
+    <!-- Draggable DIV -->
+    <div id="dragarea">
+      <p class="dragitem one noselect" id="one">✨</p>
+      <p class="dragitem two noselect" id="two">🥯</p>
+      <p class="dragitem three noselect" id="three">🐈‍⬛</p>
+      <p class="dragitem four noselect" id="four">🍰</p>
+      <p class="dragitem five noselect" id="five">🌞</p>
+    </div>
+
+    <div class="container-fluid header-bar" id="headerHeight"> <!-- HEADER -->
+
+        <div class="row"> <!-- spacer -->
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-8 noselect"> <!-- main info space-->
+                <div class="header container">
+                    <div class="header-links">
+                        <p><a href="https://ashyang.com/">Design</a> &nbsp; &nbsp; <a href="about">About</a>
+                        </p>
+                    </div>
+
+                    <!-- toggle -->
+                    <div class="toggle-text" id="toggle-mobile">
+                        <label class="toggle-label"><p>🧚</p></label>
+                        <label class="switch container">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- END HEADER -->
+
+
+    <div class="container-fluid">
+
+        <div class="row"> <!-- spacer -->
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-8"> <!-- main info space-->
+                <div class="intro" id="intro">
+                    <div class="container">
+
+                        <div class="row pb-2">
+
+                            <div class="col-sm-12 col-lg-10">
+                                <h1 class="pb-2">Refining component search with library context in&nbsp;Figma</h1>
+                                <p>I was a product design intern on the Design Systems team at Figma, which was responsible for Figma's design systems features, like libraries, components, and styles. 
+
+                                </p>
+                                <!-- <p>I was a product design intern on the Design Systems team at Figma, which was responsible for Figma's design systems features, like libraries, components, and styles. 
+                                    For the first three weeks of September 2021, I collaborated with my design mentor, an engineer, and product manager to improve asset search. This feature was released in January 2022 with positive feedback from the public. </p> -->
+                            </div>
+                        </div>
+
+
+                        <div class="row pt-2"> 
+
+                            <div class="col-sm-4 col-lg-3">
+                                <p style="font-weight:400; margin:0;">Collaborators</p>
+                                <p>
+                                   Design mentor</br>
+                                   Engineer</br>
+                                   Product manager</p>
+                            </div>
+
+                            <div class="col-sm-4 col-lg-3">
+                                <p style="font-weight:400; margin:0;">Duration</p>
+                                   <p>Sep 2021 (3 weeks)</p>
+                            </div>
+
+                            <div class="col-sm-4 col-lg-3">
+                                <p style="font-weight:400; margin:0;">Released</p>
+                                   <p>Jan 2022</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="py-4">
+                            <img src="img/cs-0-banner.jpg" class="image">
+                        </div>
+
+                        
+                        <!-- <div class="row pt-4 pb-2">
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+
+                                <p>For the first three weeks of September 2021, I collaborated with my design mentor, an engineer, and product manager to improve asset search. This feature was released in January 2022 with positive feedback from users. 
+                                    This case study is a condensed version of all the decisions behind this project—contact me for more details.
+                                </p>
+                            </div>
+                        </div> -->
+
+                    
+
+
+                        
+
+                        <!-- <div class="row pt-4 pb-2"> 
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>Key terms</h3>
+                                <p>Consumers: people who use components</p>
+                                <p>Authors: people who make components</p>
+                            </div>
+                        </div> -->
+
+
+                        <div class="row py-4">
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h2>It is hard for people to find the components they’re looking&nbsp;for.</h2>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row py-4">
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h2>Finding the intended component is&nbsp;hard, especially among similar ones.</h2>
+                            </div>
+                        </div> -->
+
+
+                        <div class="row py-2"> 
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+
+                                <!-- <p>Consumers (people who use components) have trouble finding components.</p> -->
+                                <!-- <p>It’s hard to select the right component in Figma. There are lots of components to look through.</p> -->
+                                    <!-- <p>It’s hard to differentiate components and select the correct one—usually the most updated component from the intended library. </p> -->
+                                <p>When a consumer—anyone who uses components—searches for a specific component in Figma, they aren’t always confident that they selected the right one.
+                                    The search results don’t provide enough information to differentiate similar&nbsp;components.</p>
+                                <!-- <p>Consumers still have trouble finding components even if they try searching to narrow down the options.</p> -->
+                            
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="row py-2">
+                            <div class="col-sm-12">
+                                <img src="img/cs-2-buttons.jpg" class="image img-case-study"></img>
+                                <!-- <p class="caption">Some components appear identical through the thumbnail, though they could be from different libraries.</p> -->
+                                <p class="caption">The <i>Secondary button</i> components are hard to differentiate</p>
+                            </div>
+                        </div>
+
+
+                        <div class="row py-2">
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <p>To ensure they select the intended components, consumers often copy & paste them from the original library files. This workaround is tedious and time-consuming.</p>
+                                <p>There is an opportunity here to improve the process of finding the right&nbsp;component.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="row py-4"> 
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h2>How might we help consumers find components more efficiently?</h2>
+                            </div>
+                        </div>
+
+
+                        <div class="row py-2"> 
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>Measuring efficiency</h3>
+                                <p>Since this project was small-scale, I did not conduct user testing or collect quantitative data. I used prior research and insights from design critiques to guide my design decisions. 
+                                    Public feedback would be used later to gauge the success of the&nbsp;design.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row py-2"> 
+                            <div class="col-sm-2">
+                                
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>Separating components by library</h3>
+
+                                <p>Previous research indicated that consumers differentiated similar components by libraries. Based on this insight, my main approach was to clarify which library each component belonged to. 
+                                    Two methods that could achieve this objective are (1) labeling each component and (2) grouping components by library.</p>
+                                    <!-- There are two methods to achieve this: bottom-up (labeling each component) or top-down (grouping components by library). -->
+
+
+                                <!-- <p><i>for presentation: another way to differentiate: making bigger thumbnail img. but that doesnt show updated invisible changes, and also there is already a grid view that has bigger thumbnails</i></p> -->
+
+                            </div>
+                        </div>
+
+
+                        <div class="row py-2">
+
+                            <div class="col-sm-6">
+                                <img src="img/cs-3-group.jpg" class="image img-case-study">
+                                <p class="caption">Option 1: Label components</p>
+                            </div>
+
+
+
+                            <div class="col-sm-6">
+                                <img src="img/cs-3-group2.jpg" class="image img-case-study">
+                                <p class="caption">Option 2: Group components ★</p>
+                            </div>
+                        </div>
+
+
+                        <div class="row py-2">
+
+                            <div class="col-sm-2">                               
+                            </div>
+
+                            <div class="col-sm-8">
+
+                                <p>I generated multiple designs for both options and selected <i>grouping components</i> as the better option.</p>
+                                <p>Although labels make it easy to compare similar components, structural differences prevented a clean solution that worked for both the list and grid views in the component search menu.</p>
+                                <p>Grouping by library works for both the list and grid views, follows existing component organization patterns, and 
+                                    better matches consumers’ existing mental model of the library-component relationship.
+                                </p>
+                                
+                                <!-- <img src="img/cs-4-iterations.jpg" class="image img-case-study">
+                                <p class="caption">Design option for "label by library"</p> -->
+                                
+
+                                
+                                <!-- <p>Grouping better mirrored the info model of the current state in Figma.</p> -->
+                                
+                                <!-- <img src="img/cs-4-iterations3.jpg" class="image img-case-study">
+                                <p class="caption">Similarities between existing pattern and design option</p> -->
+
+                            </div>
+                        </div>
+
+
+                        <div class="row py-2"> 
+                            <div class="col-sm-2">
+                                
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>Incorporating crit feedback on&nbsp;grouping</h3>
+                                <p>During a design team critique, I presented two main design options for grouping: listing and filtering.</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row py-2"> 
+                            <div class="col-sm-12">
+                                <img src="img/cs-4-iterations2.jpg" class="image img-case-study">
+                                <p class="caption">Two design options for "group by library"</p>
+                            </div>
+                        </div> -->
+
+
+                        <div class="row py-2">
+
+                            <div class="col-sm-6">
+                                <img src="img/cs-4-iterations2.jpg" class="image img-case-study">
+                                <p class="caption">Option 1: List</p>
+                            </div>
+
+
+
+                            <div class="col-sm-6">
+                                <img src="img/cs-4-iterations3.jpg" class="image img-case-study">
+                                <p class="caption">Option 2: Filter ★</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row py-2"> 
+                            <div class="col-sm-2">
+                                
+                            </div>
+
+                            <div class="col-sm-8">
+                                    <p>Feedback from the session centered around engineering feasibility. 
+                                        Considering the search result ranking algorithm and the variable number of components in each library, <i>filtering</i> was the more promising choice. This option was the simplest engineering-wise while still providing value of helping people find components more&nbsp;quickly.</p>
+                                    <!-- <b>Since grouping might affect how results are currently ranked, how would prioritizing libraries work? Is there a solution that makes it ideal on the engineering side?</b> 
+                                    With this question in mind, <b>filtering</b> was the most promising, since it was the simplest engineering-wise while providing value of helping people find components faster.</p>
+                                    <p>Filtering makes the UI simpler overall, since it would mostly affect the library dropdown. So the views would likely be the same for both list and grid view.</p> -->
+
+                                    <!-- <img src="img/cs-4-listgrid.jpg" class="image img-case-study">
+                                <p class="caption">Filtering simplifies the number of unique screens compared to other grouping options</p> -->
+                            </div>
+                        </div>
+
+
+
+                        <!-- <div class="row pt-4"> 
+                            <div class="col-sm-4">
+                                <h3>What about the grid view?</h3>
+                            </div>
+
+                            <div class="col-sm-8">
+                                <p>There is both a list and grid view for searching components. Another point I kept in mind while designing was how the design might transfer to the grid view. 
+                                    Is there an option that includes minimal changes to make development easier and the overall experience more seamless?
+                                </p>
+
+
+                            </div>
+                        </div> -->
+
+
+
+                        <!-- <div class="row py-2"> 
+                            <div class="col-sm-2">
+                                
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>Optionality vs. simplicity</h3>
+                                <p>My assumption was that most designers would know which library the desired components belonged to, so in the question of whether to go with a multi-filter or single-filter option, though a multi-filter was more powerful, a single library filter was much simpler and seemed to cover most cases.
+                                </p>
+
+                                <p>Also thinking about if the first screen is Recently used, would it search Recently used first? People might want to search all libraries first. Then would we change the initial screen? Basically, how would we reflect the ability to search all libraries from the beginning?</p>
+
+
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-sm-6">
+                                <img src="img/cs-5-visuals.jpg" class="image img-case-study">
+                                <p class="caption">Option 1: Multi-filter</p>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <img src="img/cs-5-visuals2.jpg" class="image img-case-study">
+                                <p class="caption">Option 2: Single filter</p>
+                            </div>
+                        </div> -->
+
+
+
+                        <div class="row py-2">
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>Diving deeper into filtering interactions</h3>
+
+                                <p>Now that I was confident in the general direction of filtering, I iterated on different ways to filter search results by library. 
+
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="row py-2">
+                            <div class="col-sm-12">
+                                <img src="img/cs-5-boolopts.jpg" class="image img-case-study">
+                                <p class="caption">Several filtering iterations</p>
+                                <!-- . The second is not as scalable (library name length). or can just truncate it -->
+                            </div>
+                        </div>
+
+
+                        <div class="row py-2">
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                    <p>Most of these options involved adding something new to the component search menu. 
+                                    My design mentor challenged me to simplify the solution even further, which led to play around with the existing components—specifically, the library dropdown.</p>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row py-2">
+                            <div class="col-sm-4">
+                                <img src="img/cs-5-funcchange.jpg" class="image img-case-study">
+                                <p class="caption">Option 1: Change initial screen to All libraries</p>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <img src="img/cs-5-funcchange.jpg" class="image img-case-study">
+                                <p class="caption">Option 2: </p>
+                            </div>
+
+                            <div class="col-sm-4">
+                                <img src="img/cs-5-funcchange.jpg" class="image img-case-study">
+                                <p class="caption">Option 3: </p>
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                    <p>One of the decisions I made was about what searching through all libraries would look like since the existing flow was the ability to search all libraries under "Recents". 
+                                        Of these options, I selected the third one which led me to the final solution of creating a functional change.</p>
+
+                                        <p>Also thinking about if the first screen is Recently used, would it search Recently used first? People might want to search all libraries first. Then would we change the initial screen? Basically, how would we reflect the ability to search all libraries from the beginning?</p>
+
+                                </p>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="row py-2">
+                            <div class="col-sm-12">
+                                <img src="img/cs-5-funcchange.jpg" class="image img-case-study">
+                                <img src="img/cs-5-funcchange.jpg" class="image img-case-study">
+
+                                <p class="caption">I decided to change how the dropdown affects search rather than adding something new</p>
+                            </div>
+                        </div> -->
+
+
+
+
+
+
+                        <div class="row py-2">
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>Creating a functional change</h3>
+                                <p>I landed on changing the existing functionality of the library dropdown.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="row py-2">
+                            <div class="col-sm-12">
+                                <img src="img/cs-5-function.jpg" class="image img-case-study">
+                                <p class="caption">Flow for changing library during a search</p>
+                                <!-- . The second is not as scalable (library name length). or can just truncate it -->
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <p>Originally, the search bar searched through everything regardless of the library selected in the dropdown. 
+                                    Narrowing the search scope to the selected library instead would decrease the search time while keeping the interface simple.</p>
+                            </div>
+                        </div>
+
+
+
+                        <!-- <div class="row py-2"> 
+                            <div class="col-sm-2">
+                                
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>Everything in motion</h3>
+                                <p>Idk some text here</p>
+                            </div>
+
+                        </div> -->
+
+
+
+
+
+<!-- 
+                        <div class="py-4">
+                            <hr>
+                        </div>  -->
+
+
+                        <div class="row py-4"> 
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h2>The final design has four features that express this new functional change.</h2>
+                            </div>
+                        </div>
+
+
+
+                        <!-- <div class="row py-2"> 
+                            <div class="col-sm-2">
+                                
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>Four main changes</h3>
+                                <p>I modified the original design in four areas to clearly express the new functional change.</p>
+                                    
+
+                            </div>
+                        </div> -->
+
+
+                        <div class="row py-2">
+                            <div class="col-sm-12">
+
+                                <div class="image img-case-study" style="background-color: #e5e5e5;">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                        </div>
+            
+                                        <div class="col-sm-7">
+                                            <img src="img/cs-final.gif" style="width:100%;">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-sm-12">
+                                        <p class="caption">The final design</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- ANOTHER OPTION!!!!!! -->    
+
+                        <!-- <div class="py-4">
+                            <hr>
+                        </div> 
+
+                        <div class="row py-4"> 
+                            <div class="col-sm-5">
+                                <h3>Searchbar helper text</h3>
+                                <p>Now, the library dropdown reflects the library that is being searched.</p>
+
+                                <p>Changed from search -> search all libraries to emphasize that searching will search all libraries. When the user selects a library, the text will change to "Search {library name}".</p>
+
+                                <p>These changes make searching components more efficient by signalling a way to narrow the search scope.</p>
+                            </div>
+
+                            <div class="col-sm-7">
+                                <img src="img/cs-6-searchhelper.jpg" class="image img-case-study">
+                                <p class="caption">Caption fjsdilherbjfhdsjk</p>
+                            </div>
+                        </div>
+
+                        <div class="py-4">
+                            <hr>
+                        </div>  -->
+
+                        <!-- END ANOTHER OPTION!!!!!! -->    
+
+
+
+
+
+
+
+                        <div class="row py-2"> 
+                            <div class="col-sm-2">
+                                
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>1 / Helper text</h3>
+                                <!-- <h3>Searchbar helper text</h3> -->
+                                <p>The search bar helper text now reflects the scope of the search, signalling the possibility to change it.</p>
+                                    
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-sm-6">
+                                <img src="img/cs-6-searchhelper.jpg" class="image img-case-study">
+                                <p class="caption">Original</p>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <img src="img/cs-6-searchhelper2.jpg" class="image img-case-study">
+                                <p class="caption">Redesign</p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="row py-2">
+                            <div class="col-sm-12">
+                                <img src="img/cs-6-searchhelper.jpg" class="image img-case-study">
+                                <p class="caption">Caption fjsdilherbjfhdsjk</p>
+
+                            </div>
+                        </div> -->
+
+
+
+
+                        <div class="row py-2"> <!-- <div class="row py-4 px-4"> -->
+                            <div class="col-sm-2">
+                                
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>2 / Visible search scope</h3>
+                                <p>Searching automatically shows the library name in the dropdown to clarify the search range. 
+                                    Its visibility while searching also allows consumers to change libraries quickly.
+                                </p>
+                                    
+
+                            </div>
+                        </div>
+
+
+                        <div class="row py-2">
+                            <div class="col-sm-6">
+                                <img src="img/cs-6-searchscope.jpg" class="image img-case-study">
+                                <p class="caption">Original</p>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <img src="img/cs-6-searchscope2.jpg" class="image img-case-study">
+                                <p class="caption">Redesign</p>
+                            </div>
+                        </div>
+
+
+                        <!-- <div class="row py-2">
+                            <div class="col-sm-12">
+                                <img src="img/cs-6-searchscope.jpg" class="image img-case-study">
+                                <p class="caption">Caption fjsdilherbjfhdsjk</p>
+                                    
+                            </div>
+                        </div> -->
+
+
+                        <div class="row py-2"> <!-- <div class="row py-4 px-4"> -->
+                            <div class="col-sm-2">
+                                
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>3 / Combining <i>Recently used</i> with <i>All libraries</i></h3>
+                                <p><i>All libraries</i> does not have a new section. Since <i>Recently used</i> is the default library and has ~25 components at most, we kept the ability to search all libraries as the default. 
+                                    This baseline makes finding a component faster by not limiting the initial search to a small library.
+                                    To make this functionality explicit, <i>Recently used</i> changes to <i>All libraries</i> when changing the library in the middle of a search.</p>
+                                <!-- <p>This makes it consistent with first possible action (searching all libraries on recents). Decided this because recently used has a max of ~26 components and the user would want to search all libraries first</p> -->
+                                    
+
+                            </div>
+                        </div>
+
+
+                        <div class="row py-2">
+                            <div class="col-sm-6">
+                                <img src="img/cs-6-change.jpg" class="image img-case-study">
+                                <p class="caption">Original</p>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <img src="img/cs-6-change2.jpg" class="image img-case-study">
+                                <p class="caption">Redesign</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row py-2"> <!-- <div class="row py-4 px-4"> -->
+                            <div class="col-sm-2">
+                                
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>4 / Search all libraries</h3>
+                                <p>If a consumer is looking for another component in a different library, there is now a quick way to expand the search range through the <i>Search all libraries</i> button.</p>
+                                    
+
+                            </div>
+                        </div>
+
+
+                        <div class="row py-2">
+                            <div class="col-sm-6">
+                                <img src="img/cs-6-searchall.jpg" class="image img-case-study">
+                                <p class="caption">Original</p>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <img src="img/cs-6-searchall2.jpg" class="image img-case-study">
+                                <p class="caption">Redesign</p>
+                            </div>
+                        </div>
+
+
+
+
+                                
+                        <!-- <div class="py-4">
+                            <hr>
+                        </div>  -->
+
+
+                        <!-- <div class="row py-4"> 
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h2>The future of the feature</h2>
+                            </div>
+                        </div> -->
+
+
+                        <div class="row py-2"> <!-- <div class="row py-4 px-4"> -->
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>Results</h3>
+
+                                <p>Since this redesign was released after my internship ended, I did not have access to any internally-collected feedback. However, several positive comments about the changes on SNS were early indicators of success for the design.</p>
+                                
+                            </div>
+                        </div>
+
+
+                        <div class="row py-2"> <!-- <div class="row py-4 px-4"> -->
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>A step towards a bigger goal</h3>
+
+                                <p>My project was a building block for a more ambitious plan to unify search in Figma. Its structure laid part of the foundation for universal search in the new Resources tab.</p>
+                                <!-- The new Resources tab built on top of the structure set up by my redesign. /  -->
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-sm-12">
+                                <img src="img/cs-7-future.jpg" class="image img-case-study">
+                                <p class="caption">Component search, as of June 2022.</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row py-2"> <!-- <div class="row py-4 px-4"> -->
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>Learning to ask questions and iterate often</h3>
+
+                                <p>Through this project, I learned that sometimes the best solution involves barely any visual changes at all. But it can take a lot of iterations to get there! Learning to frame the problem and ask the right questions at the beginning helped me get to the final stage with more confidence.</p>
+                                    
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div> <!-- main info space -->
+    </div> <!-- container fluid outer -->
+
+
+
+
+        <div class="container-fluid footer-bar"> <!-- FOOTER -->
+            <div class="row"> <!-- spacer -->
+                <div class="col-lg-2"></div>
+
+                <div class="col-lg-8"> <!-- main info space--> <!--style="opacity:.6;" -->
+                    <div class="container footer">
+                        <div class="footer-links">
+                            <p class="footer-space-text">Code by Ashley Yang.</p>
+
+                            <p class="footer-space-links">Send a msg -> <a href="mailto:ashley.yang@uwaterloo.ca" style="text-decoration: none;">Email</a>, <a href="https://twitter.com/inkpools" target="_blank" style="text-decoration: none;">Twitter</a>, <a href="https://www.linkedin.com/in/ashleyyyang/" target="_blank" style="text-decoration: none;">LinkedIn</a>.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div> <!-- END FOOTER -->
+
+
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+
+
+
+</html>

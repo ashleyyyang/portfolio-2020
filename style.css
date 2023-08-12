@@ -145,11 +145,22 @@
 
 /* VARIABLES */
 :root {
-  --arena: #fff; /* #eff4fd */
+  --arena: #FBFBFC; /* #fff */
   --laguna: #181e53;
   --espuma: #F1F2F5; /* #fff */
-  --almeja: #e89d59;
   --laguna-light: #6b6f98;
+  --laguna-light-text: #A5A7BE;
+  --laguna-really-light: #E0E3ED;
+
+  --switch-padding: 0.15rem;
+  --slider-height: calc(1.5rem - calc(var(--switch-padding)*2)); /*[height of switch] - [top + bottom padding]*/
+  --slider-move: calc(2.65rem - calc(var(--switch-padding)*2) - var(--slider-height)); /* distance for slider to travel = [width of switch] - [horizontal padding] - [width of slider] */
+}
+
+/* CSS */
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
 }
 
 
@@ -165,7 +176,7 @@ body {
 
 body {
   background-color: var(--arena);
-  color: var(--laguna);
+  color: var(--laguna); /*var(--laguna)*/
   font-size: 1.2rem;
   display: flex;
   flex-flow: wrap;
@@ -184,14 +195,68 @@ body {
   padding: 0;
 }
 
-
+div::-moz-selection { background:transparent; }
+div::selection { background:transparent; }
 
 /* Small devices (landscape phones, 544px and up -> but i changed it to 350px for portrait phones) */
 @media (min-width: 350px) {
+
+    .footer-space-text {
+      margin-bottom:0.5rem;
+
+    }
+
+    .footer-space-links {
+      margin:0;
+
+    }
+
+    .project:hover {
+      background-color: transparent;
+      color: var(--arena);
+    }
+
+
+
+
+    /* NO DRAGGABLE ITEMS ON MOBILE
+    .dragitem {
+        display: none;
+    }
+
+
+    #toggle-mobile {
+      visibility: hidden;
+    }
+    */
+
+    .dragitem {
+        position: fixed;
+        text-align: center;
+        touch-action: none;
+        display: inline-block;
+        font-size: 3.75rem;
+        line-height:1;
+        width:auto;
+        height:auto;
+        margin:0;
+
+    }
+
+    #toggle-mobile {
+      visibility: visible;
+    }
+
+
+    /* INDEX CARD TEXT PADDING */
+    .card-text {
+        padding: 1.5rem 0rem;
+    }
+
     /*h1 {font-size:1.5rem;}*/ /*1rem = 16px*/
   h1 {
     font-family: 'Inferi', 'Instrument Serif', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal, italic;
     font-size: 2.7rem;
     /* 2.4rem */
@@ -262,12 +327,9 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 1.0rem;
+    margin-bottom:0.5rem;
   }
 
-  /* INDEX CARD TEXT PADDING */
-  .card-text {
-      padding: 20px;
-  }
 
 }
 
@@ -276,11 +338,51 @@ body {
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-space-text {
+      margin:0;
+
+    }
+
+    .footer-space-links {
+      margin:0;
+
+    }
+
+
+    .project:hover {
+      background-color: var(--espuma);
+      color: var(--arena);
+    }
+
+
+
+    /* DRAGGABLE ITEMS */
+    .dragitem {
+        font-size: 5.5rem;
+    }
+
+    /* when i didnt want stickers to show on mobile. but i changed my mind
+    #toggle-mobile {
+      visibility: visible;
+    }
+    */
+
+    /* INDEX CARD TEXT PADDING */
+    .card-text {
+        padding: 2rem 1.5rem;
+    }
+
     /*h1 {font-size:2rem;}*/ /*1rem = 16px*/
 
   h1 {
     font-family: 'Inferi', 'Instrument Serif', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal, italic;
     font-size: 3.0rem;
     /* 2.4rem */
@@ -330,7 +432,7 @@ body {
     font-family: 'Inferi', 'Instrument Serif', sans-serif;
     font-weight: 300;
     font-style: normal, italic;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   h4 {
@@ -353,10 +455,7 @@ body {
     font-size: 1.1rem;
   }
 
-  /* INDEX CARD TEXT PADDING */
-  .card-text {
-      padding: 40px 20px;
-  }
+
 }
 
 
@@ -364,10 +463,32 @@ body {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+    /* DRAGGABLE ITEMS */
+    .dragitem {
+        font-size: 6rem;
+    }
+
+    /* INDEX CARD TEXT PADDING */
+    .card-text {
+        margin:auto;
+    }
+
+    .card-center {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .card-flex {
+        flex-direction:column;
+        flex:1;
+    }
+
     /*h1 {font-size:2.5rem;}*/ /*1rem = 16px*/
   h1 {
     font-family: 'Inferi', 'Instrument Serif', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal, italic;
     font-size: 3.5rem;
     /* 2.4rem */
@@ -417,7 +538,7 @@ body {
     font-family: 'Inferi', 'Instrument Serif', sans-serif;
     font-weight: 300;
     font-style: normal, italic;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   h4 {
@@ -439,11 +560,105 @@ body {
     font-weight: 300;
     font-size: 1.2rem;
   }
+
+  .header.container p, li {
+    font-size: 1.1rem;
+    padding-top:2px;
+  }
+
+  .footer.container p, li {
+    font-size: 1.1rem;
+    padding-top:2px;
+  }
+
 }
 
 
 
+/* DRAGGABLE STUFF */
 
+#dragarea {
+  position: absolute;
+  width:100%;
+  height: auto;
+  overflow-y: hidden;
+  touch-action: none;
+  visibility: hidden;
+}
+
+/* moved to middle media query
+.dragitem {
+    position: absolute;
+    text-align: center;
+    touch-action: none;
+    display: inline-block;
+    font-size: 4.5rem;
+    line-height:1;
+}
+*/
+
+
+
+
+.one {
+    top:150px;
+    left:230px;
+    z-index: 999999;
+}
+
+.two {
+    top:100px;
+    right:30px;
+    z-index: 999999;
+}
+
+.three {
+    bottom:200px;
+    right:100px;
+    z-index: 999999;
+}
+
+.four {
+    bottom:200px;
+    left:100px;
+    z-index: 999999;
+}
+
+.five {
+    bottom:500px;
+    right:250px;
+    z-index: 999999;
+}
+
+
+.dragitem:hover {
+  cursor: move;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+#dragdiv {
+  position: absolute;
+  top:550px;
+  left:30px;
+  z-index: 9;
+  text-align: center;
+}
+
+#dragdivheader {
+  cursor: move;
+  z-index: 10;
+  color: var(--arena);
+}
 
 
 
@@ -470,7 +685,7 @@ a:hover {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   font-style: normal;
   text-decoration: none;
   color: var(--arena);
@@ -483,11 +698,12 @@ a:hover {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   font-style: normal;
   text-decoration: none;
   color: var(--laguna);
 }
+
 
 /* HIGHLIGHT */
 ::-moz-selection {
@@ -504,22 +720,60 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 9999;
+  position: fixed;
+  background-color: var(--arena);
+  /* From https://css.glass */
+  /*
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  */
+
 }
+
+.header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: normal;
+    /* From https://css.glass */
+    border-bottom: 1px solid var(--laguna-really-light);
+}
+
+.header.container p {
+  margin: 0;
+  vertical-align:baseline;
+  line-height:100%;
+}
+
+.header-links {
+    display: flex;
+    vertical-align:middle;
+}
+
+
 
 .header-bar a {
   font-style: normal;
-  text-decoration: none !important;
+  text-decoration: none;
+  color: var(--laguna);
 }
 
 .header-bar a:hover {
   font-style: normal;
-  text-decoration: none !important;
+  text-decoration: none;
+}
+
+.selected-header-page {
+ /* TODO */
 }
 
 /* INTRO */
 
 .intro {
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
   display: flex;
   align-items: center;
@@ -529,11 +783,13 @@ a:hover {
 
 .project {
   background-color: none;
-  margin-bottom: 40px;
-  border-radius: 10px;
+  margin-bottom: 2.5rem;
+  border-radius: 0.5rem;
 
-  /* border: 1px solid var(--laguna);
-  border-top: 0px; */
+
+    /*
+    border: 1px solid rgba(107, 111, 152, 0.2)
+    border: 1px solid var(--laguna); */
 }
 
 .project a {
@@ -544,10 +800,7 @@ a:hover {
   color: var(--laguna);
 }
 
-.project:hover {
-  background-color: var(--espuma);
-  color: var(--arena);
-}
+
 
 .project a:hover {
   /*background-color: var(--laguna);
@@ -563,6 +816,8 @@ a:hover {
 
   font-style: normal !important;
   text-decoration: none !important;
+  margin-bottom: 2.5rem;
+  border-radius: 0.5rem;
 }
 
 .project-inc a {
@@ -571,6 +826,18 @@ a:hover {
   font-style: normal !important;
   text-decoration: none !important;
 }
+
+
+.next-project {
+  border-radius: 0.5rem;
+  border: 1px solid var(--laguna-really-light);
+}
+
+.tag {
+    color:var(--laguna-light);
+
+}
+
 
 .middle {
     display: flex;
@@ -581,11 +848,49 @@ a:hover {
 img {
   display: block;
   border: 0;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   width: 100%;
   height: auto;
   /* background-color: bisque; */
 }
+
+.art {
+  background-color: none;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--laguna-really-light);
+
+    /*
+    border: 1px solid var(--laguna); */
+}
+
+.image {
+    background-color: none;
+    /*margin-bottom: 1.25rem;*/
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--laguna-really-light);
+}
+
+.img-case-study {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.caption {
+    color: var(--laguna-light-text);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--laguna-really-light);
+  border: none;
+}
+
+
+
 
 /* BLOCKQUOTES */
 .wrapper {
@@ -623,11 +928,10 @@ blockquote {
 }
 
 /* ACCORDIONS */
-/* Accordion button */
+/* Accordion button
 .accordion {
   background-color: var(--laguna);
   color: var(--arena);
-  /* cursor: pointer; */
   padding: 18px 18px;
   width: 100%;
   text-align: left;
@@ -635,16 +939,16 @@ blockquote {
   outline: none;
   transition: 0.4s;
   display: inline-block;
-  border-radius: 10px;
-}
+  border-radius: 0.5rem;
+} */
 
-/* Accordion hover */
+/* Accordion hover
 .active,
 .accordion:hover {
   background-color: var(--laguna-light);
-}
+} */
 
-/* Accordion panel */
+/* Accordion panel
 .panel {
   padding: 18px 0px 0px 0px;
   background-color: none;
@@ -653,7 +957,7 @@ blockquote {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-in;
-}
+} */
 
 /* Blank */
 .blank {
@@ -661,10 +965,130 @@ blockquote {
 }
 
 /* Footer */
-.footer {
-  margin: 20px auto;
+.footer-bar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top:2rem;
 }
 
+.footer-bar a {
+  font-style: normal;
+  text-decoration: none !important;
+}
+
+.footer-bar a:hover {
+  font-style: normal;
+  text-decoration: none !important;
+}
+
+.footer {
+  padding-bottom:2rem;
+  padding-top:2rem;
+  border-top: 1px solid var(--laguna-really-light);
+}
+
+/**/
+
+
+
+
+
+
+
+/* TOGGLE */
+
+
+/*vertical aligning :') */
+.toggle-text {
+    display: flex;
+    margin-top:0;
+    margin-bottom:0;
+    align-items: center
+}
+
+.toggle-text p {
+    line-height: 100%;
+}
+
+.toggle-label {
+    margin:0;
+    padding-right:0.6rem;
+    vertical-align:middle;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2.65rem; /*60px*/ /* (1.5*60)/34 = 2.65 */
+  height: 1.5rem; /*34px*/
+   /* header container: padding 15, margin 35; col padding: 15 */ /*30px*/
+  margin-right: auto;
+  vertical-align: middle;
+}
+
+.switch.container {
+  flex: 0 0 auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  vertical-align:middle;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--laguna-really-light);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: var(--slider-height); /*26px*/ /*[height of switch] - [top + bottom padding]*/
+  width: var(--slider-height); /*26px*/
+  left: var(--switch-padding);
+  bottom: var(--switch-padding);
+  background-color: white;
+  -webkit-transition: .2s; /*.4s*/
+  transition: .2s;
+}
+
+input:checked + .slider {
+  background-color: var(--laguna-light);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--laguna-light);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(var(--slider-move)); /* distance for slider to travel = [width of switch] - [horizontal padding] - [width of slider] */   /*translateX(26px)*/
+  -ms-transform: translateX(var(--slider-move));
+  transform: translateX(var(--slider-move));
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 
 
@@ -680,8 +1104,11 @@ blockquote {
 
 
 a:hover {
+    cursor: pointer;
   /* emoji: https://www.emojicursor.app/ */
-  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='44' height='53' viewport='0 0 100 100' style='fill:black;font-size:26px;'><text y='50%'>👀</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  /*cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='44' height='53' viewport='0 0 100 100' style='fill:black;font-size:26px;'><text y='50%'>👀</text></svg>") 16 0,auto;*/
+  /*cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='128' height='128' viewport='0 0 100 100' style='fill:black;font-size:3rem;'><text y='50%'>👀</text></svg>") 16 0,auto;*/ /*!emojicursor.app*/
+
 
   /* rainbow lucky charm marshmallow */
   /* cursor: url(https://cur.cursors-4u.net/food/foo-6/foo515.cur), auto !important; */
