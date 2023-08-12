@@ -584,6 +584,7 @@ div::selection { background:transparent; }
   overflow-y: hidden;
   touch-action: none;
   visibility: hidden;
+  
 }
 
 /* moved to middle media query
@@ -603,31 +604,31 @@ div::selection { background:transparent; }
 .one {
     top:150px;
     left:230px;
-    z-index: 999999;
+    z-index: 999999999;
 }
 
 .two {
     top:100px;
     right:30px;
-    z-index: 999999;
+    z-index: 999999998;
 }
 
 .three {
     bottom:200px;
     right:100px;
-    z-index: 999999;
+    z-index: 999999997;
 }
 
 .four {
     bottom:200px;
     left:100px;
-    z-index: 999999;
+    z-index: 999999996;
 }
 
 .five {
     bottom:500px;
     right:250px;
-    z-index: 999999;
+    z-index: 999999995;
 }
 
 
@@ -650,13 +651,13 @@ div::selection { background:transparent; }
   position: absolute;
   top:550px;
   left:30px;
-  z-index: 9;
+  z-index: 9; /* 9 */
   text-align: center;
 }
 
 #dragdivheader {
   cursor: move;
-  z-index: 10;
+  z-index: 10; /* 10 */
   color: var(--arena);
 }
 
