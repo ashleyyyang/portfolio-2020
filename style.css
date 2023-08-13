@@ -783,7 +783,7 @@ a:hover {
 /* CARDS */
 
 .project {
-  background-color: var(--arena);
+  /* background-color: var(--arena); */
   margin-bottom: 2.5rem;
   border-radius: 0.5rem;
 
