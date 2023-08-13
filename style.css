@@ -584,7 +584,7 @@ div::selection { background:transparent; }
   overflow-y: hidden;
   touch-action: none;
   visibility: hidden;
-  
+
 }
 
 /* moved to middle media query
@@ -783,7 +783,7 @@ a:hover {
 /* CARDS */
 
 .project {
-  background-color: none;
+  background-color: var(--arena);
   margin-bottom: 2.5rem;
   border-radius: 0.5rem;
 
@@ -987,6 +987,7 @@ blockquote {
   padding-bottom:2rem;
   padding-top:2rem;
   border-top: 1px solid var(--laguna-really-light);
+  background-color: var(--arena);
 }
 
 /**/
