@@ -117,6 +117,7 @@
                             <div class="col-sm-12 col-lg-10">
                                 <h1 class="pb-2">Shaping component and style updates in&nbsp;Figma</h1>
                                 <p>I was a product design intern on the Design Systems team at Figma, which was responsible for Figma's design systems features, like libraries, components, and styles. </p>
+                                <p><i>This case study is a condensed version of all the decisions behind this project.</i></p>
 
                                 <!-- <p>I was on the Design Systems team during my internship at Figma. My main project involved working on components, libraries, and styles.</p> -->
                             </div>
@@ -156,16 +157,77 @@
                         </div>
 
 
-                        <div class="row pt-4 pb-2"> <!-- <div class="row py-4 px-4"> -->
-                            <div class="col-sm-4">
-                                <h3>Designers don’t know how component and style updates affect their files.</h3>
-                                <!-- <h3>Designers are reluctant to update components and styles.</h3> -->
-                                <!-- <h2>Hitting snooze</h2> -->
+
+                        <div class="row py-4">
+                            <div class="col-sm-2">
                             </div>
 
                             <div class="col-sm-8">
-                                <p>Two main characteristics contribute to the reluctance to update:</p>
-                                <div class="row">
+                                <h2>Designers are hesitant to update components and styles.</h2>
+                            </div>
+                        </div>
+
+                        <div class="row py-2"> 
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <p>Consumers—people who use components—don’t know how the updates will affect their files, so they usually dismiss update&nbsp;notifications.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="row py-2">
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <img src="img/cu-1-notif.jpg" class="image">
+                                <p class="caption">The often ignored notification</p>
+                            </div>
+                        </div>
+
+
+                        <div class="row py-2"> 
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <!-- <h3>Putting off new updates results in outdated files, which can hinder communication with collaborators.</h3> -->
+                                <p>Putting off new updates results in outdated files, which can hinder communication with collaborators. 
+                                    We want to encourage designers to update their components so that their files stay up-to-date and there are fewer discrepancies between collaborators’ work.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="row py-4">
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h2>How might we give consumers more control & clarity over this process so they can update components and styles confidently?</h2>
+                                <!-- <h2>How might we give consumers more control & clarity over what changes will be made upon&nbsp;updating?</h2> -->
+                                <!-- <h2>How might we give consumers more control & clarity over this process so they can update components and styles confidently?</h2> -->
+                            </div>
+                        </div>
+
+
+                        <div class="row py-2"> 
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <!-- <h3></h3> -->
+                                <p>Two main characteristics of the current updating process contribute to the reluctance to update:</p>
+
+                                <p style="font-weight:400; margin:0;">Lack of control</p>
+                                <p>A component update affects <i>all</i> of its instances in a file. </br>Similarly, a style update affects <i>all</i> of its applications.</p>
+
+                                <p style="font-weight:400; margin:0;">Lack of clarity</p>
+                                <p>It is unclear if the update will break designs.</p>
+
+                                <!-- <div class="row">
                                     <div class="col-sm-6">
                                         <p style="font-weight:400; margin:0;">Lack of control</p>
                                         <p>A component update affects <i>all</i> of its instances in a file. </br>Similarly, a style update affects <i>all</i> of its applications.</p>
@@ -176,45 +238,54 @@
                                         <p>It is unclear if the update will break designs.</p>
 
                                     </div>
-                                </div>
+                                </div> -->
+
                                 <!-- <ol><li><p style="margin-bottom:0;">Lack of control: A component update affects <i>all</i> of its instances in a file. Similarly, a style update affects <i>all</i> of its applications.</p></li>
                                     <li><p>Lack of clarity: It is unclear if the update will break designs.</p></li>
                                 </ol> -->
-                                    <p>In other words: designers don't know how updates affect their files, so they usually ignore notifications to update. </p>
-                                    <img src="img/cu-1-notif.jpg" class="image">
-                                    <p class="caption">The often ignored notification</p>
+                                <p>After exploring all the options, I decided to focus on three main features.
+                                </p>
                             </div>
                         </div>
 
-                        <div class="row pt-4"> <!-- <div class="row py-4 px-4"> -->
-                            <div class="col-sm-4">
-                                <h3>Putting off new updates results in outdated files.</h3>
+
+                        <div class="row py-4">
+                            <div class="col-sm-2">
                             </div>
 
                             <div class="col-sm-8">
-                                <p>There is an opportunity to encourage designers to update their components!</p>
-                                    <img src="img/cu-2-notif.jpg" class="image"></img>
-                                    <p class="caption">We want designers to review and accept changes!</p>
-
+                                <h2>I created a more granular updating experience so consumers can update components and styles confidently.</h2>
                             </div>
                         </div>
 
-                        <div class="blank py-4"></div>
-                        <h2><i>How might we give designers more <strong>control</strong> & <strong>clarity</strong> so they can update components and styles confidently?</i></h2>
 
-                        <h2><i>By creating a more granular updating experience.</i></h2>
-                        <div class="blank py-4"></div>
+                        <div class="row py-4">
+                            <div class="col-sm-2">
+                            </div>
 
-                        <div class="row pt-4"> <!-- <div class="row py-4 px-4"> -->
-                            <div class="col-sm-4">
+                            <div class="col-sm-8">
                                 <h3>Individual updates</h3>
-                            </div>
-
-                            <div class="col-sm-8">
                                 <p>For "control"—allowed possibility to update specific instances instead of all instances</p>
 
+
                             </div>
                         </div>
+
+
+
+                        <div class="row py-4">
+                            <div class="col-sm-2">
+                            </div>
+
+                            <div class="col-sm-8">
+                                <h3>Visual diffs</h3>
+                                <p>For "clarity"—added visual diffs to make it clearer how the component or style will look before and after an update. </p>
+
+                            </div>
+                        </div>
+
+
+
 
                         <div class="row pt-4"> <!-- <div class="row py-4 px-4"> -->
                             <div class="col-sm-4">
@@ -280,7 +351,7 @@
                                     <div class="col-sm-9">
                                         <div class="card-text">
                                             <p class="tag">Figma, 2021</p>
-                                            <h3>Refining asset search through scoped queries</h3>
+                                            <h3>Refining component search with library context in Figma</h3>
                                             <p>Read case study -></p>
                                             <!-- <p>Refining asset search through queries filtered by library.</p> -->
                                         </div>
@@ -312,7 +383,7 @@
                         <div class="footer-links">
                             <p class="footer-space-text">Code by Ashley Yang.</p>
 
-                            <p class="footer-space-links">Call me maybe -> <a href="mailto:ashley.yang@uwaterloo.ca" style="text-decoration: none;">Email</a>, <a href="https://twitter.com/inkpools" target="_blank" style="text-decoration: none;">Twitter</a>, <a href="https://www.linkedin.com/in/ashleyyyang/" target="_blank" style="text-decoration: none;">LinkedIn</a>.</p>
+                            <p class="footer-space-links">Send a msg -> <a href="mailto:ashley.yang@uwaterloo.ca" style="text-decoration: none;">Email</a>, <a href="https://twitter.com/inkpools" target="_blank" style="text-decoration: none;">Twitter</a>, <a href="https://www.linkedin.com/in/ashleyyyang/" target="_blank" style="text-decoration: none;">LinkedIn</a>.</p>
                         </div>
 
                     </div>
