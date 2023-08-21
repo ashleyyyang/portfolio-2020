@@ -255,7 +255,7 @@ div::selection { background:transparent; }
 
     /*h1 {font-size:1.5rem;}*/ /*1rem = 16px*/
   h1 {
-    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-family: 'Inferi', 'Inter', serif;
     font-weight: 300;
     font-style: normal, italic;
     font-size: 2.2rem;
@@ -265,17 +265,16 @@ div::selection { background:transparent; }
   h1 a {
     font-style: italic;
     text-decoration: none;
-    color: var(--laguna-light);
   }
 
   h1 a:hover {
     font-style: italic;
     color: var(--arena);
-    background-color: var(--laguna-light);
+    background-color: var(--laguna);
   }
 
   h2 {
-    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-family: 'Inferi', 'Inter', serif;
     font-weight: 300;
     font-style: normal, italic;
     font-size: 1.7rem;
@@ -288,29 +287,28 @@ div::selection { background:transparent; }
   }
 
   .about h2 a {
-    font-weight: 300;
+    font-weight: 200;
     font-style: italic;
     text-decoration: none;
-    color: var(--laguna-light);
-
+    color: var(--laguna);
   }
 
   .about h2 a:hover {
-    font-weight: 300;
+    font-weight: 200;
     font-style: italic;
     color: var(--arena);
-    background-color: var(--laguna-light);
+    background-color: var(--laguna);
   }
 
   h3 {
-    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-family: 'Inferi', 'Inter', serif;
     font-weight: 300;
     font-style: normal, italic;
     font-size: 1.4rem;
   }
 
   h4 {
-    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-family: 'Inferi', 'Inter', serif;
     font-weight: normal;
     font-style: normal, italic;
     font-size: 1.2rem;
@@ -381,7 +379,7 @@ div::selection { background:transparent; }
     /*h1 {font-size:2rem;}*/ /*1rem = 16px*/
 
   h1 {
-    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-family: 'Inferi', 'Inter', serif;
     font-weight: 300;
     font-style: normal, italic;
     font-size: 2.4rem;
@@ -391,17 +389,16 @@ div::selection { background:transparent; }
   h1 a {
     font-style: italic;
     text-decoration: none;
-    color: var(--laguna-light);
   }
 
   h1 a:hover {
     font-style: italic;
     color: var(--arena);
-    background-color: var(--laguna-light);
+    background-color: var(--laguna);
   }
 
   h2 {
-    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-family: 'Inferi', 'Inter', serif;
     font-weight: 300;
     font-style: normal, italic;
     font-size: 1.8rem;
@@ -414,29 +411,29 @@ div::selection { background:transparent; }
   }
 
   .about h2 a {
-    font-weight: 300;
+    font-weight: 200;
     font-style: italic;
     text-decoration: none;
-    color: var(--laguna-light);
+    color: var(--laguna);
 
   }
 
   .about h2 a:hover {
-    font-weight: 300;
+    font-weight: 200;
     font-style: italic;
     color: var(--arena);
-    background-color: var(--laguna-light);
+    background-color: var(--laguna);
   }
 
   h3 {
-    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-family: 'Inferi', 'Inter', serif;
     font-weight: 300;
     font-style: normal, italic;
     font-size: 1.6rem;
   }
 
   h4 {
-    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-family: 'Inferi', 'Inter', serif;
     font-weight: normal;
     font-style: normal, italic;
     font-size: 1.2rem;
@@ -487,27 +484,26 @@ div::selection { background:transparent; }
 
     /*h1 {font-size:2.5rem;}*/ /*1rem = 16px*/
   h1 {
-    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-family: 'Inferi', 'Inter', serif;
     font-weight: 300;
     font-style: normal, italic;
-    font-size: 3.5rem;
-    /* 2.4rem */
+    font-size: 3.3rem;
+    /* 3.5rem */
   }
 
   h1 a {
     font-style: italic;
     text-decoration: none;
-    color: var(--laguna-light);
   }
 
   h1 a:hover {
     font-style: italic;
     color: var(--arena);
-    background-color: var(--laguna-light);
+    background-color: var(--laguna);
   }
 
   h2 {
-    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-family: 'Inferi', 'Inter', serif;
     font-weight: 300;
     font-style: normal, italic;
     font-size: 2.3rem;
@@ -520,29 +516,28 @@ div::selection { background:transparent; }
   }
 
   .about h2 a {
-    font-weight: 300;
+    font-weight: 200;
     font-style: italic;
     text-decoration: none;
-    color: var(--laguna-light);
 
   }
 
   .about h2 a:hover {
-    font-weight: 300;
+    font-weight: 200;
     font-style: italic;
     color: var(--arena);
-    background-color: var(--laguna-light);
+    background-color: var(--laguna);
   }
 
   h3 {
-    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-family: 'Inferi', 'Inter', serif;
     font-weight: 300;
     font-style: normal, italic;
     font-size: 1.7rem;
   }
 
   h4 {
-    font-family: 'Inferi', 'Instrument Serif', sans-serif;
+    font-family: 'Inferi', 'Inter', serif;
     font-weight: normal;
     font-style: normal, italic;
     font-size: 1.3rem;
@@ -874,7 +869,7 @@ img {
 }
 
 .img-case-study {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
