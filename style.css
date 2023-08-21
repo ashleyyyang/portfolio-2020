@@ -258,7 +258,7 @@ div::selection { background:transparent; }
     font-family: 'Inferi', 'Instrument Serif', sans-serif;
     font-weight: 300;
     font-style: normal, italic;
-    font-size: 2.7rem;
+    font-size: 2.2rem;
     /* 2.4rem */
   }
 
@@ -318,7 +318,7 @@ div::selection { background:transparent; }
 
   h5 {
     font-family: 'Inter', sans-serif;
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
   }
 
@@ -326,7 +326,7 @@ div::selection { background:transparent; }
   li {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     margin-bottom:0.5rem;
   }
 
@@ -384,7 +384,7 @@ div::selection { background:transparent; }
     font-family: 'Inferi', 'Instrument Serif', sans-serif;
     font-weight: 300;
     font-style: normal, italic;
-    font-size: 3.0rem;
+    font-size: 2.4rem;
     /* 2.4rem */
   }
 
