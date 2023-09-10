@@ -1,11 +1,43 @@
 /* TEXT */
 
+
+/* used: h2 about */
 @font-face {
-    font-family: 'Inferi';
-    src: url('https://ashyang.com/Inferi/Inferi-Bold.otf') format('opentype'),
-         url('https://ashyang.com/Inferi/Inferi-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Inferi UltraLight';
+  src: url('https://ashyang.com/Inferi/Inferi-UltraLight.otf') format('opentype'),
+       url('https://ashyang.com/Inferi/Inferi-UltraLight.woff') format('woff');
+  /* font-weight: 200; */
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'Inferi UltraLight';
+  src: url('https://ashyang.com/Inferi/Inferi-UltraLightItalic.otf') format('opentype'),
+       url('https://ashyang.com/Inferi/Inferi-UltraLightItalic.woff') format('woff');
+  /* font-weight: 200; */
+  font-style: italic;
+
+}
+
+
+
+/* used: h1 */
+@font-face { 
+  font-family: 'Inferi Book';
+  src: url('https://ashyang.com/Inferi/Inferi-Book.otf') format('opentype'),
+       url('https://ashyang.com/Inferi/Inferi-Book.woff') format('woff');
+  /* font-weight: 300; */
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Inferi Book';
+  src: url('https://ashyang.com/Inferi/Inferi-BookItalic.otf') format('opentype'),
+       url('https://ashyang.com/Inferi/Inferi-BookItalic.woff') format('woff');
+  font-style: italic;
 
 }
 
@@ -13,82 +45,20 @@
 
 
 @font-face {
-    font-family: 'Inferi';
-    src: url('https://ashyang.com/Inferi/Inferi-BoldItalic.otf') format('opentype'),
-         url('https://ashyang.com/Inferi/Inferi-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'Inferi';
-    src: url('https://ashyang.com/Inferi/Inferi-Book.otf') format('opentype'),
-         url('https://ashyang.com/Inferi/Inferi-Book.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'Inferi';
-    src: url('https://ashyang.com/Inferi/Inferi-BookItalic.otf') format('opentype'),
-         url('https://ashyang.com/Inferi/Inferi-BookItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'Inferi';
-    src: url('https://ashyang.com/Inferi/Inferi-Dante.otf') format('opentype'),
-         url('https://ashyang.com/Inferi/Inferi-Dante.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'Inferi';
-    src: url('https://ashyang.com/Inferi/Inferi-DanteItalic.otf') format('opentype'),
-         url('https://ashyang.com/Inferi/Inferi-DanteItalic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'Inferi';
+    font-family: 'Inferi Normal';
     src: url('https://ashyang.com/Inferi/Inferi-Normal.otf') format('opentype'),
          url('https://ashyang.com/Inferi/Inferi-Normal.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 
 }
 
 
-
-
 @font-face {
-    font-family: 'Inferi';
+    font-family: 'Inferi Normal';
     src: url('https://ashyang.com/Inferi/Inferi-NormalItalic.otf') format('opentype'),
          url('https://ashyang.com/Inferi/Inferi-NormalItalic.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: italic;
 
 }
@@ -96,50 +66,7 @@
 
 
 
-@font-face {
-    font-family: 'Inferi';
-    src: url('https://ashyang.com/Inferi/Inferi-Thin.otf') format('opentype'),
-         url('https://ashyang.com/Inferi/Inferi-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
 
-}
-
-
-
-
-@font-face {
-    font-family: 'Inferi';
-    src: url('https://ashyang.com/Inferi/Inferi-ThinItalic.otf') format('opentype'),
-         url('https://ashyang.com/Inferi/Inferi-ThinItalic.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'Inferi';
-    src: url('https://ashyang.com/Inferi/Inferi-UltraLight.otf') format('opentype'),
-         url('https://ashyang.com/Inferi/Inferi-UltraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'Inferi';
-    src: url('https://ashyang.com/Inferi/Inferi-UltraLightItalic.otf') format('opentype'),
-         url('https://ashyang.com/Inferi/Inferi-UltraLightItalic.woff') format('woff');
-    font-weight: 200;
-    font-style: italic;
-
-}
 
 
 
@@ -201,6 +128,15 @@ div::selection { background:transparent; }
 /* Small devices (landscape phones, 544px and up -> but i changed it to 350px for portrait phones) */
 @media (min-width: 350px) {
 
+  .next-project-img {
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+  }
+
+  .next-project-text {
+    padding: 1.5rem;
+  }
+
+
     .footer-space-text {
       margin-bottom:0.5rem;
 
@@ -211,11 +147,16 @@ div::selection { background:transparent; }
 
     }
 
-    .project:hover {
-      background-color: transparent;
-      color: var(--arena);
+    .project {
+      /* background-color: var(--arena); */
+      margin-bottom: 2rem;
+      border-radius: 0.5rem;
+    
+    
+        /*
+        border: 1px solid rgba(107, 111, 152, 0.2)
+        border: 1px solid var(--laguna); */
     }
-
 
 
 
@@ -250,13 +191,16 @@ div::selection { background:transparent; }
 
     /* INDEX CARD TEXT PADDING */
     .card-text {
+      margin-top: 1.5rem;
+  }
+    /* .card-text {
         padding: 1.5rem 0rem;
-    }
+    } */
 
     /*h1 {font-size:1.5rem;}*/ /*1rem = 16px*/
   h1 {
-    font-family: 'Inferi', 'Inter', serif;
-    font-weight: 300;
+    font-family: 'Inferi Book', 'Inter', serif;
+    /* font-weight: 300; */
     font-style: normal, italic;
     font-size: 2.2rem;
     /* 2.4rem */
@@ -274,42 +218,39 @@ div::selection { background:transparent; }
   }
 
   h2 {
-    font-family: 'Inferi', 'Inter', serif;
-    font-weight: 300;
+    font-family: 'Inferi Book', 'Inter', serif;
+    /* font-weight: 300; */
     font-style: normal, italic;
     font-size: 1.7rem;
   }
 
   .about h2 {
-    font-weight: 200;
+    font-family: 'Inferi UltraLight', 'Inter', serif;
+    /* font-weight: 200; */
     font-style: normal, italic;
     font-size: 1.7rem;
   }
 
   .about h2 a {
-    font-weight: 200;
     font-style: italic;
     text-decoration: none;
     color: var(--laguna);
   }
 
   .about h2 a:hover {
-    font-weight: 200;
-    font-style: italic;
     color: var(--arena);
     background-color: var(--laguna);
   }
 
   h3 {
-    font-family: 'Inferi', 'Inter', serif;
-    font-weight: 300;
+    font-family: 'Inferi Book', 'Inter', serif;
     font-style: normal, italic;
     font-size: 1.4rem;
   }
 
   h4 {
-    font-family: 'Inferi', 'Inter', serif;
-    font-weight: normal;
+    font-family: 'Inferi Book', 'Inter', serif;
+    /* font-weight: normal; */
     font-style: normal, italic;
     font-size: 1.2rem;
   }
@@ -336,6 +277,17 @@ div::selection { background:transparent; }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+  .next-project-img {
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+  }
+
+  .next-project-text {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 0rem;
+  }
+
+
     .footer-links {
       display: flex;
       justify-content: space-between;
@@ -352,12 +304,10 @@ div::selection { background:transparent; }
 
     }
 
-
-    .project:hover {
-      background-color: var(--espuma);
-      color: var(--arena);
+    .project {
+      margin-bottom: 3rem;
+      border-radius: 0.5rem;
     }
-
 
 
     /* DRAGGABLE ITEMS */
@@ -372,14 +322,14 @@ div::selection { background:transparent; }
     */
 
     /* INDEX CARD TEXT PADDING */
-    .card-text {
-        padding: 2rem 1.5rem;
-    }
+    /* .card-text {
+        margin: 2rem 1.5rem;
+    } */
 
     /*h1 {font-size:2rem;}*/ /*1rem = 16px*/
 
   h1 {
-    font-family: 'Inferi', 'Inter', serif;
+    font-family: 'Inferi Book', 'Inter', serif;
     font-weight: 300;
     font-style: normal, italic;
     font-size: 2.4rem;
@@ -398,43 +348,36 @@ div::selection { background:transparent; }
   }
 
   h2 {
-    font-family: 'Inferi', 'Inter', serif;
-    font-weight: 300;
+    font-family: 'Inferi Book', 'Inter', serif;
     font-style: normal, italic;
     font-size: 1.8rem;
   }
 
   .about h2 {
-    font-weight: 200;
+    font-family: 'Inferi UltraLight', 'Inter', serif;
     font-style: normal, italic;
     font-size: 1.8rem;
   }
 
   .about h2 a {
-    font-weight: 200;
     font-style: italic;
     text-decoration: none;
     color: var(--laguna);
-
   }
 
   .about h2 a:hover {
-    font-weight: 200;
-    font-style: italic;
     color: var(--arena);
     background-color: var(--laguna);
   }
 
   h3 {
-    font-family: 'Inferi', 'Inter', serif;
-    font-weight: 300;
+    font-family: 'Inferi Book', 'Inter', serif;
     font-style: normal, italic;
     font-size: 1.6rem;
   }
 
   h4 {
-    font-family: 'Inferi', 'Inter', serif;
-    font-weight: normal;
+    font-family: 'Inferi Book', 'Inter', serif;
     font-style: normal, italic;
     font-size: 1.2rem;
   }
@@ -461,15 +404,20 @@ div::selection { background:transparent; }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
+  .project {
+    margin-bottom: 4rem;
+    border-radius: 0.5rem;
+  }
+
     /* DRAGGABLE ITEMS */
     .dragitem {
         font-size: 6rem;
     }
 
     /* INDEX CARD TEXT PADDING */
-    .card-text {
+    /* .card-text {
         margin:auto;
-    }
+    } */
 
     .card-center {
         display:flex;
@@ -484,7 +432,7 @@ div::selection { background:transparent; }
 
     /*h1 {font-size:2.5rem;}*/ /*1rem = 16px*/
   h1 {
-    font-family: 'Inferi', 'Inter', serif;
+    font-family: 'Inferi Book', 'Inter', serif;
     font-weight: 300;
     font-style: normal, italic;
     font-size: 3.3rem;
@@ -503,42 +451,37 @@ div::selection { background:transparent; }
   }
 
   h2 {
-    font-family: 'Inferi', 'Inter', serif;
-    font-weight: 300;
+    font-family: 'Inferi Book', 'Inter', serif;
     font-style: normal, italic;
     font-size: 2.3rem;
   }
 
   .about h2 {
-    font-weight: 200;
+    font-family: 'Inferi UltraLight', 'Inter', serif;
     font-style: normal, italic;
     font-size: 2.3rem;
   }
 
   .about h2 a {
-    font-weight: 200;
     font-style: italic;
     text-decoration: none;
-
+    color: var(--laguna);
   }
 
   .about h2 a:hover {
-    font-weight: 200;
-    font-style: italic;
     color: var(--arena);
     background-color: var(--laguna);
   }
 
   h3 {
-    font-family: 'Inferi', 'Inter', serif;
-    font-weight: 300;
+    font-family: 'Inferi Book', 'Inter', serif;
+    /* font-weight: 300; */
     font-style: normal, italic;
     font-size: 1.7rem;
   }
 
   h4 {
-    font-family: 'Inferi', 'Inter', serif;
-    font-weight: normal;
+    font-family: 'Inferi Book', 'Inter', serif;
     font-style: normal, italic;
     font-size: 1.3rem;
   }
@@ -730,12 +673,20 @@ a:hover {
 .header {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    /* padding-left: 0;
+    padding-right:0; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-style: normal;
     /* From https://css.glass */
     border-bottom: 1px solid var(--laguna-really-light);
+}
+
+.line {
+  /* border-bottom: 1px solid var(--laguna-really-light); */
+  background-color: pink;
+
 }
 
 .header.container p {
@@ -762,31 +713,42 @@ a:hover {
   text-decoration: none;
 }
 
-.selected-header-page {
- /* TODO */
-}
+/* TODO */
+/* .selected-header-page {
+ 
+} */
+
 
 /* INTRO */
 
 .intro {
-  padding-top: 3rem;
+  /* padding-top: 3rem;
+  padding-bottom: 2rem; */
+  /* padding-top: 6rem; */
+  padding-top: 4rem;
   padding-bottom: 2rem;
   display: flex;
   align-items: center;
 }
 
+.intro-index {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+
+/* PADDING */
+
+.padding-sec {
+  padding-top: 
+}
+
+
 /* CARDS */
 
-.project {
-  /* background-color: var(--arena); */
-  margin-bottom: 2.5rem;
-  border-radius: 0.5rem;
 
-
-    /*
-    border: 1px solid rgba(107, 111, 152, 0.2)
-    border: 1px solid var(--laguna); */
-}
 
 .project a {
   background-color: none;
@@ -799,12 +761,14 @@ a:hover {
 
 
 .project a:hover {
-  /*background-color: var(--laguna);
-  color: var(--arena);*/
-
+  background-color: var(--laguna-really-light);
   font-style: normal !important;
   text-decoration: none !important;
 }
+
+/* .project a:hover h2 {
+  font-style: italic;
+} */
 
 .project-inc {
   background-color: none;
@@ -827,11 +791,14 @@ a:hover {
 .next-project {
   border-radius: 0.5rem;
   border: 1px solid var(--laguna-really-light);
+  margin-bottom: 0;
 }
 
-.tag {
-    color:var(--laguna-light);
 
+
+.tag {
+  color:var(--laguna-light-text);
+  /* font-weight: 500; */
 }
 
 
@@ -849,6 +816,9 @@ img {
   height: auto;
   /* background-color: bisque; */
 }
+
+
+
 
 .art {
   background-color: none;
@@ -886,6 +856,18 @@ hr {
 }
 
 
+/* SPACER */
+.spacer-xs {
+  padding-top: 0.5rem;
+}
+
+.spacer-sm {
+  padding-top: 1.5rem;
+}
+
+.spacer-md {
+  padding-top: 3rem;
+}
 
 
 /* BLOCKQUOTES */
@@ -1101,10 +1083,10 @@ input:checked + .slider:before {
 
 
 a:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
   /* emoji: https://www.emojicursor.app/ */
-  /*cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='44' height='53' viewport='0 0 100 100' style='fill:black;font-size:26px;'><text y='50%'>👀</text></svg>") 16 0,auto;*/
-  /*cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='128' height='128' viewport='0 0 100 100' style='fill:black;font-size:3rem;'><text y='50%'>👀</text></svg>") 16 0,auto;*/ /*!emojicursor.app*/
+  /* cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='44' height='53' viewport='0 0 100 100' style='fill:black;font-size:26px;'><text y='50%'>👀</text></svg>") 16 0,auto; */
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='80' height='80' viewport='0 0 100 100' style='fill:black;font-size:3rem;'><text y='50%'>👀</text></svg>") 16 0,auto; /*!emojicursor.app*/
 
 
   /* rainbow lucky charm marshmallow */
