@@ -125,6 +125,10 @@ body {
 div::-moz-selection { background:transparent; }
 div::selection { background:transparent; }
 
+strong {
+  font-weight: 500;
+}
+
 /* Small devices (landscape phones, 544px and up -> but i changed it to 350px for portrait phones) */
 @media (min-width: 350px) {
 
