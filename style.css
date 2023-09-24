@@ -576,7 +576,18 @@ strong {
 
 .dragitem:hover {
   cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
 }
+
+.dragitem:active {
+  cursor: move;
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
 
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
