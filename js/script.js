@@ -209,12 +209,18 @@ function showEmojis() {
   ];
 
   // GENERATE AND PRINT RANDOM EMOJIS, PART 2/3
-  const arrAllEmojis = ['🥯', '🐈‍⬛', '🍰', '🌞', '🤓', '🥸', '😳', '😩',
-                        '🧍🏻‍♀️', '🕶️', '🐰', '🐟',
-                        '🌈', '🫔', '🍕', '🫑', '🍅', '🫐', '🍐',
-                        '💭', '💯', '❤️‍🔥', '💕', '🧴', '📖', '📔',
-                        '💋', '🛌',
-                        '🍵', '🍦', '🍠', '🍝', '🥗']; //set of all emojis
+    const arrAllEmojis = ['🥑', '🥔', '🥦', '🍋‍🟩', '🥒', '🥕', '🌽', '🍅',
+                        '🥬', '🫜', '🧅', '🌶️',
+                        '🫛', '🍠', '🫑', '🥗', '🍒', '🫐', '🍐',
+                        '🍓', '🍇', '🍎', '🍉', '🍑', '🍊', '🍋',
+                        '🍍', '🍌', 
+                        '🍏', '🍈', '🥝', '🥭', '🥥'];
+  // const arrAllEmojis = ['🥯', '🐈‍⬛', '🍰', '🌞', '🤓', '🥸', '😳', '😩',
+  //                       '🧍🏻‍♀️', '🕶️', '🐰', '🐟',
+  //                       '🌈', '🫔', '🍕', '🫑', '🍅', '🫐', '🍐',
+  //                       '💭', '💯', '❤️‍🔥', '💕', '🧴', '📖', '📔',
+  //                       '💋', '🛌',
+  //                       '🍵', '🍦', '🍠', '🍝', '🥗'];
   // , '', '', '', '', '', ''
   const arrFiveEmojis = getRandomArray(arrAllEmojis, 5); // get shuffled array of 5 random emojis
 
@@ -247,7 +253,14 @@ function showEmojis() {
 
 
 
+// HEADER HEIGHT
 
+document.addEventListener("DOMContentLoaded", function() {
+  var headerHeight = document.getElementById("headerHeight").offsetHeight; // get height of header
+  var introPaddingPixels = parseFloat(getComputedStyle(document.getElementById("intro")).paddingTop); // convert intro padding from rem to px
+  document.getElementById("intro").style.paddingTop = (introPaddingPixels + headerHeight) + "px"; // make new intro paddingTop = header height + original intro padding
+  document.body.classList.add("ready"); // CSS transition
+});
 
 
 
@@ -259,16 +272,16 @@ function showEmojis() {
 
 
 
-      // HEIGHT OF HEADER (PADDING BC OF STICKY HEADER)
-      // get height of header
-      var headerHeight = document.getElementById("headerHeight").offsetHeight;
+      // // HEIGHT OF HEADER (PADDING BC OF STICKY HEADER)
+      // // get height of header
+      // var headerHeight = document.getElementById("headerHeight").offsetHeight;
 
-      // convert intro padding from rem to px
-      var rem = 1;
-      var introPaddingPixels = rem * parseFloat(getComputedStyle(document.getElementById("intro")).paddingTop);
+      // // convert intro padding from rem to px
+      // var rem = 1;
+      // var introPaddingPixels = rem * parseFloat(getComputedStyle(document.getElementById("intro")).paddingTop);
 
-      // make new intro paddingTop = header height + original intro padding
-      document.getElementById("intro").style.paddingTop = introPaddingPixels + headerHeight + "px";
+      // // make new intro paddingTop = header height + original intro padding
+      // document.getElementById("intro").style.paddingTop = introPaddingPixels + headerHeight + "px";
 
       // showEmojis.call();
 

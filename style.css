@@ -1085,7 +1085,14 @@ input:checked + .slider:before {
 }
 
 
-
+/* Hide page until fully loaded */
+body {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+body.ready {
+  opacity: 1;
+}
 
 
 
