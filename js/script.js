@@ -259,7 +259,10 @@ document.addEventListener("DOMContentLoaded", function() {
   var headerHeight = document.getElementById("headerHeight").offsetHeight; // get height of header
   var introPaddingPixels = parseFloat(getComputedStyle(document.getElementById("intro")).paddingTop); // convert intro padding from rem to px
   document.getElementById("intro").style.paddingTop = (introPaddingPixels + headerHeight) + "px"; // make new intro paddingTop = header height + original intro padding
-  document.body.classList.add("ready"); // CSS transition
+});
+
+window.addEventListener('load', () => {
+  document.body.classList.add('ready'); // CSS transition
 });
 
 

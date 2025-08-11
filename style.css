@@ -1087,10 +1087,12 @@ input:checked + .slider:before {
 
 /* Hide page until fully loaded */
 body {
-  opacity: 0;
-  transition: opacity 0.2s ease;
+  visibility: hidden;
 }
+
 body.ready {
+  visibility: visible;
+  transition: opacity 0.3s ease;
   opacity: 1;
 }
 
