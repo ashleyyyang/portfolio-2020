@@ -64,6 +64,11 @@
 }
 
 
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 
@@ -807,7 +812,10 @@ a:hover {
 
 .tag {
   color:var(--laguna-light-text);
-  /* font-weight: 500; */
+  font-family: 'VT323';
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 
