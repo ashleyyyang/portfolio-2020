@@ -967,6 +967,7 @@ blockquote {
     margin-top:2rem;
 }
 
+
 .footer-bar a {
   font-style: normal;
   text-decoration: none !important;
@@ -975,6 +976,13 @@ blockquote {
 .footer-bar a:hover {
   font-style: normal;
   text-decoration: none !important;
+  cursor: pointer;
+}
+
+.footer-space-links a:hover {
+  font-style: normal;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 
 .footer {
